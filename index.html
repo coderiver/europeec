@@ -218,8 +218,8 @@
 						<img src="img/entry.jpg" alt="">
 					</div>
 					<div class="entry__content">
-						<div class="entry__label is-hot">Горячая тема</div>
-						<p><strong>Баррозу требует от Путина прекратить военные действия в Украине  /</strong>  Нацгвардия получила новое руководство во главе с 5ю опытнейшими командирами, участниками боевых действий</p>
+						<a href="#" class="entry__label is-hot">Горячая тема</a>
+						<p><a href='#'><strong>Баррозу требует от Путина прекратить военные действия в Украине  /</strong>  Нацгвардия получила новое руководство во главе с 5ю опытнейшими командирами, участниками боевых действий</a></p>
 					</div>
 					<a href='#' class="entry__comments">2</a>
 				</div>
@@ -308,7 +308,7 @@
 			<!-- begin l-col3  -->
 			<div class="l-col3">
 				<!-- begin sbanner  -->
-				<div class="sbanner">
+				<div class="b sbanner">
 					<img src="img/sbanner.jpg" alt="">
 				</div>
 				<!-- end sbanner -->
@@ -321,11 +321,11 @@
 					</div>
 					<div class="interviews">
 						<!-- begin interview  -->
-						<div class="post">
+						<a href='#' class="post">
 							<div class="post__pic"><img src="img/interview.jpg" alt=""></div>
 							<h3 class="post__person">Алена Гетьманчук</h3>
 							<div class="post__title">Федерация – не панацея. Есть другие средства</div>
-						</div>
+						</a>
 						<!-- end post -->
 						<!-- begin post  -->
 						<div class="post">
@@ -337,19 +337,27 @@
 					</div>
 				</div>
 				<!-- end b -->
-				<div class="banner">
+				<div class="b banner">
 					<img src="img/dbanner.jpg" alt="">
 				</div>
 
 				<!-- begin b b_editors  -->
 				<div class="b editors">
 					<div class="editors__icon"></div>
+					<div class="editors__nav">
+						<div class="editors__prev"></div>
+						<div class="editors__next"></div>
+					</div>
 					<h2 class="editors__title">Выбор редакции</h2>
-					<div class="editors__slider">
-						<div class="editors__nav">
-							<div class="editors__next"></div>
-							<div class="editors__prev"></div>
-						</div>
+
+					<div class="editors__slider cycle-slideshow"
+						data-cycle-fx="scrollHorz" 
+					    data-cycle-timeout="2000"
+					    data-cycle-slides="> .editors__slide"
+					    data-cycle-prev=".editors__prev"
+					    data-cycle-next=".editors__next"
+					>
+						
 						<div class="editors__slide">
 							<a href="#">
 								<img src="img/editors.jpg" alt="">
@@ -373,21 +381,30 @@
 						<a href="#" class="head__more">Все галереи<i></i></a>
 					</div>
 					<div class="fotos">
-						<div class="fotos__item">
-							<a href="#" class="fotos__title"><img src="img/fotos.jpg" alt="">
-							<span>Фильм-открытие Каннского фестиваля - "Принцесса Монако"</span></a>
-						</div>
-						<div class="fotos__item">
-							<a href="#" class="fotos__title"><img src="img/fotos.jpg" alt="">
-							<span>Фильм-открытие Каннского фестиваля - "Принцесса Монако"</span></a>
+						<div class="fotos__slides cycle-slideshow"
+						data-cycle-fx="scrollHorz" 
+					    data-cycle-timeout="5000"
+					    data-cycle-slides="> .fotos__item"
+					    data-cycle-prev=".fotos__prev"
+					    data-cycle-next=".fotos__next"
+					    data-cycle-pager=".fotos__pagi">
+							<div class="fotos__item">
+								<a href="#" class="fotos__title"><img src="img/fotos.jpg" alt="">
+								<span>Фильм-открытие Каннского фестиваля - "Принцесса Монако"</span></a>
+							</div>
+							<div class="fotos__item">
+								<a href="#" class="fotos__title"><img src="img/fotos.jpg" alt="">
+								<span>Фильм-открытие Каннского фестиваля - "Принцесса Монако"</span></a>
+							</div>
 						</div>
 
 						<div class="fotos__nav">
 							<div class="fotos__prev"></div>
-							<div class="fotos__pagi"><a href=""></a><a href=""></a></div>
+							<div class="fotos__pagi"></div>
 							<div class="fotos__next"></div>
 						</div>
 					</div>
+
 				</div>
 				<!-- end b -->
 

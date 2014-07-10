@@ -216,6 +216,9 @@
 	.entry__content
 		overflow: hidden
 		display: block
+		a
+			text-decoration: none
+			color: #6D6D6D 
 		p
 			+ca
 			color: #6D6D6D
@@ -290,4 +293,117 @@
 		height: auto
 		width: auto
 		@extend %arrow
-	
+
+.post
+	margin-bottom: 10px 
+	display: block
+	text-decoration: none
+	color: #111111 
+	+clr
+	&:last-child
+		.post__pic
+			border-bottom: none 
+	.post__pic
+		float: left
+		padding-bottom: 10px 
+		border-bottom: 1px dotted #C4C4C4 
+		margin-right: 16px 
+	.post__person
+		color: #0E4AAB
+		margin-bottom: 8px 
+		line-height: 1.25
+		position: relative
+		top: -2px  
+		font-weight: normal
+		font-size: 12px 
+	.post__title 
+		font-weight: bold
+
+
+
+.editors
+	position: relative
+	padding: 18px 16px 16px 16px 
+	background: #F6F6F6
+	border: 1px solid #D0D0D0  
+	.editors__icon
+		position: absolute
+		top: -9px 
+		left: 17px 
+		+s(editors)
+	.editors__title
+		font-size: 16px 
+		+b
+		color: #3E4046
+		margin-bottom: 15px 
+	.editors__slide
+		width: 205px 
+		a
+			text-decoration: none
+			color: #111111 
+			display: block
+			width: 100% 
+		img
+			display: block
+			//width: 100%
+		span
+			display: block
+			margin-top: 11px 
+			font-weight: bold
+			color: #111 
+	.editors__nav
+		float: right
+		position: relative
+		top: 2px 
+		&>div
+			display: inline-block
+			cursor: pointer
+		.editors__next
+			+s(next)
+			margin-left: 9px 
+		.editors__prev
+			+s(prev)
+.fotos
+	.fotos__item
+		width: 240px 
+		a
+			text-decoration: none
+			color: #111 
+			font-weight: bold
+		img
+			margin-bottom: 12px 
+	.fotos__nav
+		border-bottom: 1px dotted #CDCDCD
+		margin: 0 18px
+		margin-top: 23px   
+		position: relative
+		text-align: center
+
+		height: 4px  
+	.fotos__prev,.fotos__next
+		position: absolute
+		top: 0px  
+		cursor: pointer
+	.fotos__prev
+		+s(prev)
+		left: -18px
+	.fotos__next
+		+s(next)
+		right: -18px
+	.fotos__pagi
+		display: inline-block
+		background: #fff
+		position: relative
+		top: -10px  
+		padding-right: 8px 
+		font-size: 0 
+		span
+			cursor: pointer
+			+hide-text
+			width: 5px 
+			height: 5px 
+			display: inline-block
+			background: #4F4F4F
+			margin-left: 8px 
+			&.cycle-pager-active
+				background: #D1D1D1 
