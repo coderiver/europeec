@@ -1,2 +1,293 @@
 // Normally mainpage styles
- 
+.topbanner
+	margin: 0 auto
+	overflow: hidden
+	max-width: 1240px   
+
+.spec
+	height: 51px 
+	text-align: center
+	font-size: 17px 
+	font-style: italic
+	line-height: 51px 
+	font-family: Georgia,serif 
+	color: #fff 
+	margin-bottom: 11px 
+	b
+		font-weight: bold
+		color: #FEDE36 
+
+.head
+	border-bottom: 2px solid #E0E0E0 
+	padding-bottom: 16px 
+	position: relative
+	margin-bottom: 19px 
+	&.head_margin
+		padding-left: 50px 
+	h2
+		font-weight: normal
+		+b
+		font-size: 16px 
+		color: #919295
+	.head__more
+		position: absolute
+		right: 0
+		top: 5px 
+		text-decoration: none 
+		@extend %arrow
+	.head__morealt
+		i
+			+s(arrowbottom) 
+.b
+	margin-bottom: 20px 
+.news
+	.news__title
+		font-weight: bold
+		font-size: 14
+		color: #171717 
+		padding-left: 50px 
+		margin-bottom: 10px 
+		margin-top: 18px 
+	.news__more
+		margin-left: 50px 
+		font-weight: bold
+		display: inline-block
+		@extend %arrow
+
+.ni
+	+clr
+	padding-bottom: 10px 
+	margin-left: 50px 
+	position: relative
+	min-height: 1em
+	border-bottom: 1px dotted #C0C0C0 
+	color: #2F2F2F
+	display: block
+	text-decoration: none  
+	margin-bottom: 8px 
+	&.is-important
+		font-weight: bold
+		color: #111111
+		a
+			color: #111111 
+		.ni__date
+			color: #111 
+	a
+		color: #2F2F2F
+		text-decoration: none 
+	.ni__date
+		color: #9C9C9C
+		position: absolute
+		left: -50px
+
+.banner
+	margin-bottom: 20px 
+
+.vote
+	.vote__title
+		font-size: 18px 
+		+cab
+		line-height: 1.1
+		color: #525252  
+		margin-bottom: 16px 
+	.vote__options
+		margin-left: 30px 
+		list-style: none
+		margin-bottom: 18px 
+		li
+			padding-left: 23px 
+			position: relative
+			margin-bottom: 8px 
+			color: #4D4D4D 
+			input
+				position: absolute
+				left: 0 
+	.vote__submit
+		margin-left: 30px 
+		border-top: 1px solid #E1E1E1
+		padding-top: 10px  
+		padding-left: 23px 
+		a
+			@extend %arrow
+.toparea
+	+clr
+	margin-bottom: 23px 
+.topitem
+	+clr
+	.topitem__pic
+		img
+			display: block
+			width: 100% 
+	.topitem__content
+		overflow: hidden
+		p
+			font-size: 13px 
+			color: #4D4D4D 
+			line-height: 1.38 
+	.topitem__title
+		+cab
+		color: #181818
+		line-height: 1.1  
+		font-size: 24px 
+		position: relative
+		top: -4px 
+		margin-bottom: 18px 
+		a
+			color: #181818
+			text-decoration: none  
+	&.topitem_big
+		border-bottom: 1px solid #E1E1E1
+		padding-bottom: 23px  
+		margin-bottom: 23px 
+		.topitem__pic
+			float: left
+			margin-right: 20px 
+			width: 64%
+	&.topitem_small
+		width: 46% 
+		.topitem__pic
+			margin-bottom: 15px 
+		.topitem__title
+			font-size: 18px 
+			+cab
+			color: #111111 
+			a
+				text-decoration: none
+				color: #111111 
+	&.topitem_left
+		float: left 
+	&.topitem_right
+		float: right
+
+.smbanner
+	margin-bottom: 20px 
+.sw
+	font-size: 14px 
+	color: #111111
+	margin-bottom: 17px 
+	overflow: hidden
+	+b 
+	ul
+		list-style: none
+		border-bottom: 1px solid #DEDEDE
+		+clr 
+	li
+		float: left
+		&:last-child
+			a
+				&:before
+					display: none
+	a
+		float: left
+		text-decoration: none
+		color: #111111
+		padding: 11px 12px
+		//border: 1px solid #fff  
+		position: relative
+		top: 1px 
+		border-bottom: none 
+		&:before
+			position: absolute
+			top: 12px 
+			height: 17px 
+			border-right: 1px solid #DFDFDF
+			right: -1px
+			content: ' '  
+		&.is-active,&:hover
+			color: #898B8E 
+			//border-color: #D7D7D7 
+			background: #fff
+			border: 1px solid #D7D7D7
+			border-bottom: none 
+			padding: 10px 11px 14px 11px
+			//margin-left: -1px 
+			&:before
+				display: none
+.entry
+	+clr
+	padding-bottom: 15px 
+	margin-bottom: 15px 
+	border-bottom: 1px dotted #C0C0C0 
+	position: relative
+	padding-right: 35px 
+	.entry__pic
+		float: left
+		margin-right: 20px 
+	.entry__content
+		overflow: hidden
+		display: block
+		p
+			+ca
+			color: #6D6D6D
+			font-size: 14px  
+			line-height: 1.2
+			strong
+				font-weight: normal
+				color: #111111 
+				+cab
+	.entry__label
+		display: inline-block
+		height: 17px 
+		line-height: 17px
+		font-size: 12px  
+		color: #2B2B2B
+		margin-bottom: 8px
+		padding: 0 6px
+		background: #E9E9E9 
+		position: relative
+		text-decoration: none
+		&:before
+			position: absolute
+			right: -4px
+			top: 0
+			content: ' '
+			+s(label)  
+		&.is-hot
+			background: #FEE392 
+			&:before
+				+s(labelhot)
+	.entry__comments
+		position: absolute
+		top: 0
+		right: 0
+		+s(comments)  
+		line-height: 13px
+		font-size: 10px  
+		color: #28468E
+		text-decoration: none 
+		text-align: center
+		&.is-empty
+			color: #9BA3BD
+		
+.pagi
+	a
+		text-decoration: none
+		color: #111111
+		display: inline-block
+		vertical-align: middle 
+		border: 1px solid #fff
+		width: 20px 
+		height: 20px 
+		line-height: 20px
+		text-align: center
+		margin-right: 5px  
+		&.is-active
+			font-weight: bold
+			color: #9A9A9A 
+			border-color: #D7D7D7 
+
+	.pagi__prev,.pagi__next
+		display: inline-block 
+		border-style: none
+		
+	.pagi__prev
+		+s(prev)
+	.pagi__next
+		+s(next)
+	.pagi__more
+		margin-left: 32px  
+		border-style: none
+		height: auto
+		width: auto
+		@extend %arrow
+	

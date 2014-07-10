@@ -1,0 +1,105 @@
+.fbanner
+	padding: 11px 0
+	border-top: 1px solid #DFDFDF 
+	overflow: hidden
+.footer
+	border-top: 1px solid #fff
+	box-shadow:  0 -3px 0 #E0E0E0, inset 0 1px 0 #E0E0E0 
+	padding: 33px 0 42px 0
+	position: relative
+	.footer__left
+		float: left
+		width: 210px 
+		padding-left: 30px 
+	.footer__gototop
+		float: right
+		margin-right: 30px 
+		font-size: 11px 
+		text-transform: uppercase
+		color: #8F8F8F
+		text-decoration: none
+		cursor: pointer
+		i
+			+s(arrowtop)
+			margin-left: 7px 
+			display: inline-block
+	.footer__right
+		margin-left: 294px 
+		position: relative
+	.footer__top
+		margin-bottom: 25px 
+		.footer__right
+			border-bottom: 1px solid #E1E1E1 
+			padding-bottom: 14px 
+	.footer__copy
+		font-size: 12px 
+		color: #888888 
+		margin-right: 335px 
+		line-height: 17px  
+	.footer__like
+		text-align: left
+		margin-top: 27px 
+	.footer__other
+		float: right
+		width: 242px 
+		margin-right: 33px 
+		text-align: right
+	.footer__dev
+		color: #4D4D4D
+		text-decoration: none
+		margin-bottom: 17px  
+		a
+			+hide-text
+			+s(vintage)
+			display: inline-block
+			vertical-align: bottom
+			position: relative
+			top: -3px 
+	.footer__logo
+		+s(smalllogo)
+		display: inline-block
+		margin-bottom: 15px 
+	.footer__nav
+		font-size: 11px 
+		list-style: non
+		font-weight: bold
+		li
+			margin-bottom: 10px 
+		a
+			text-decoration: none
+			color: #111111 
+	.footer__topics
+		clear: both
+		ul
+			list-style: none
+		li
+			display: inline-block
+			font-size: 0
+		a
+			font-size: 14px 
+			font-weight: bold
+			@extend %arrow
+			margin-right: 23px 
+	.footer__cat
+		float: left
+		margin-right: 25px 
+		dt
+			margin-bottom: 16px 
+			text-transform: uppercase
+			+b
+			font-size: 12px 
+			color: #2A2A2A
+		ul
+			list-style: none
+		li
+			margin-bottom: 8px 
+		a
+			text-decoration: none
+			color: #2F2F2F 
+.socials
+	a
+		display: inline-block
+		margin-right: 29px 
+	@each $s in fb,tw,rss
+		.socials__#{$s}
+			+s(#{$s})
