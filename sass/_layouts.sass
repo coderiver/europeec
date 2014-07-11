@@ -1,4 +1,8 @@
 // default layout
+body
+	padding: 0 20px
+	+r(850) 
+		padding: 0 15px 
 .outer
 	max-width: 1240px 
 	margin: 0 auto 
@@ -8,10 +12,36 @@
 	.l-col1
 		float: left
 		width: 240px
+		//margin-left: -100% 
+		+r(910)
+			float: none
+			width: auto
+			margin: 0 
 	.l-col2
 		float: left
-		margin-left: 56px 
-		width: 654px 
+		width: 100% 
+		margin-left: -240px 
+		+r(1240)
+			float: right
+		+r(910)
+			float: none
+			width: auto
+			margin: 0 
+		.l-col2inner
+			margin: 0 295px 
+			+r(910)
+				margin: 0 
+			+r(1240)
+				margin-right: 0 
 	.l-col3
 		float: right
 		width: 240px
+		margin-left: -240px 
+		+r(1240)
+			margin-left: 0
+			float: left
+			clear: left 
+		+r(910)
+			float: none
+			width: auto
+			margin: 0 

@@ -3,6 +3,8 @@
 	margin: 0 auto
 	overflow: hidden
 	max-width: 1240px   
+	+r(850)
+		display: none
 
 .spec
 	height: 51px 
@@ -13,6 +15,16 @@
 	font-family: Georgia,serif 
 	color: #fff 
 	margin-bottom: 11px 
+	display: block
+	text-decoration: none
+	+r(850)
+		height: auto 
+		line-height: 1.1 
+		padding: 15px 
+		background-size: cover !important
+		
+		b
+			display: block
 	b
 		font-weight: bold
 		color: #FEDE36 
@@ -134,7 +146,9 @@
 		margin-bottom: 18px 
 		a
 			color: #181818
-			text-decoration: none  
+			text-decoration: none 
+			&:hover
+				color: #2A71DF  
 	&.topitem_big
 		border-bottom: 1px solid #E1E1E1
 		padding-bottom: 23px  
@@ -154,6 +168,8 @@
 			a
 				text-decoration: none
 				color: #111111 
+				&:hover
+					color: #2A71DF  
 	&.topitem_left
 		float: left 
 	&.topitem_right
@@ -161,6 +177,8 @@
 
 .smbanner
 	margin-bottom: 20px 
+	width: 100%
+	overflow: hidden 
 .sw
 	font-size: 14px 
 	color: #111111
@@ -219,6 +237,9 @@
 		a
 			text-decoration: none
 			color: #6D6D6D 
+			&:hover
+				strong
+					color: #2A71DF 
 		p
 			+ca
 			color: #6D6D6D
@@ -261,6 +282,9 @@
 		text-align: center
 		&.is-empty
 			color: #9BA3BD
+		&:hover
+			+sp(commentsh)
+			color: #fff
 		
 .pagi
 	a
@@ -299,6 +323,7 @@
 	display: block
 	text-decoration: none
 	color: #111111 
+	cursor: pointer
 	+clr
 	&:last-child
 		.post__pic
@@ -318,6 +343,9 @@
 		font-size: 12px 
 	.post__title 
 		font-weight: bold
+	&:hover
+		.post__title
+			color: #2A71DF 
 
 
 
@@ -364,6 +392,7 @@
 		.editors__prev
 			+s(prev)
 .fotos
+	margin-bottom: 24px 
 	.fotos__item
 		width: 240px 
 		a
@@ -375,7 +404,7 @@
 	.fotos__nav
 		border-bottom: 1px dotted #CDCDCD
 		margin: 0 18px
-		margin-top: 23px   
+		margin-top: 16px   
 		position: relative
 		text-align: center
 
@@ -407,3 +436,5 @@
 			margin-left: 8px 
 			&.cycle-pager-active
 				background: #D1D1D1 
+			&:hover
+				background: #2A70DF 

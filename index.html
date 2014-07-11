@@ -23,21 +23,43 @@
 		</ul>
 		<div class="header__left">
 			<div class="header__currencies">
-				<div class="currency"><span class="currency__name">EUR<i class="currency__more"></i></span> <i class="currency__status is-up"></i><div class="currency__value">16.05</div></div>
+				<div class="currency">
+					<div class="currency__name">
+						<div class="currency__current">EUR<i class="currency__more"></i></div>
+						<ul class="currency__select">
+							<li><a href="#">USD</a></li>
+							<li><a href="#">UAH</a></li>
+							<li><a href="#">RUB</a></li>
+						</ul>
+					</div>
+					<i class="currency__status is-up"></i><div class="currency__value">16.05</div>
+				</div>
 				<div class="header__sep"></div>
-				<div class="currency"><span class="currency__name">USD<i class="currency__more"></i></span> <i class="currency__status is-down"></i><div class="currency__value">11.56</div></div>
+				<div class="currency">
+				<div class="currency__name">
+					<div class="currency__current">USD<i class="currency__more"></i></div>
+					<ul class="currency__select">
+						<li><a href="#">USD</a></li>
+						<li><a href="#">UAH</a></li>
+						<li><a href="#">RUB</a></li>
+					</ul>
+				</div> <i class="currency__status is-down"></i><div class="currency__value">11.56</div></div>
 			</div>
 			<!-- begin search  -->
 			<div class="search">
-				<input type="text" class="search__input">
+				<input type="text" class="search__input" placeholder="Поиск">
 				<div class="search__go"></div>
 			</div>
 			<!-- end search -->
 		</div>
+		<!-- end header__left -->
 	</div>
 	<!-- end header -->
 	<!-- begin nav  -->
 	<div class="nav">
+		<div class="nav__show">
+			Меню <i></i>
+		</div>
 		<ul>
 			<li><a href="#">Политика</a></li>
 			<li><a href="#">Экономика</a></li>
@@ -56,12 +78,13 @@
 	<div class="content">
 
 		<!-- begin spec  -->
-		<div class="spec" style="background:url(img/spec.jpg) no-repeat 50%  0">
+		<a href='#' class="spec" style="background:url(img/spec.jpg) no-repeat 50%  0">
 			<div class="spec__title"><b>Спецпроект:</b>  Подписание ассоциации с ЕС - в мире "за" и "против"</div>
-		</div>
+		</a>
 		<!-- end spec -->
 		<!-- begin l  -->
 		<div class="l">
+
 			<!-- begin l-col1  -->
 			<div class="l-col1">
 				<!-- begin b  -->
@@ -144,10 +167,9 @@
 			</div>
 			<!-- end l-col1 -->
 
-
-
 			<!-- begin l-col2  -->
 			<div class="l-col2">
+			<div class="l-col2inner">
 				<!-- begin toparea  -->
 				<div class="toparea">
 					<!-- begin head  -->
@@ -303,7 +325,14 @@
 					<a href="#" class="pagi__more">Все статьи раздела<i></i></a>
 				</div>
 			</div>
+			</div>
 			<!-- end l-col2 -->
+
+			
+
+
+
+			
 
 			<!-- begin l-col3  -->
 			<div class="l-col3">
@@ -416,11 +445,11 @@
 					</div>
 					<div class="interviews">
 						<!-- begin interview  -->
-						<div class="post">
+						<a href='#' class="post">
 							<div class="post__pic"><img src="img/interview.jpg" alt=""></div>
 							<h3 class="post__person">Алена Гетьманчук</h3>
 							<div class="post__title">Федерация – не панацея. Есть другие средства</div>
-						</div>
+						</a>
 						<!-- end post -->
 						<!-- begin post  -->
 						<div class="post">
@@ -545,6 +574,12 @@
 			<!-- end footer__left -->
 			<!-- begin footer__right  -->
 			<div class="footer__right">
+				
+				<div class="footer__copy">
+					<p>© 2000-2014, ООО Европеец. Все права защищены.<br>
+					Использование любых материалов, размещённых на сайте, разрешается при условии ссылки на сайт.<br>
+					При копировании материалов со страницы «Новости Украины и мира», для интернет-изданий – обязательна прямая открытая для поисковых систем гиперссылка. Ссылка должна быть размещена в независимости от полного либо частичного использования материалов. Гиперссылка (для интернет- изданий) – должна быть размещена в подзаголовке или в первом абзаце материала.</p>
+				</div>
 				<div class="footer__other">
 					<div class="footer__dev">
 						Разработка сайта: <a href="http://vintage.com.ua">Vintage</a>
@@ -552,11 +587,6 @@
 					<div class="footer__counters">
 						<img src="img/counter.jpg" alt="">
 					</div>
-				</div>
-				<div class="footer__copy">
-					<p>© 2000-2014, ООО Европеец. Все права защищены.<br>
-					Использование любых материалов, размещённых на сайте, разрешается при условии ссылки на сайт.<br>
-					При копировании материалов со страницы «Новости Украины и мира», для интернет-изданий – обязательна прямая открытая для поисковых систем гиперссылка. Ссылка должна быть размещена в независимости от полного либо частичного использования материалов. Гиперссылка (для интернет- изданий) – должна быть размещена в подзаголовке или в первом абзаце материала.</p>
 				</div>
 				
 			</div>
