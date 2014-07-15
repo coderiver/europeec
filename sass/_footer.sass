@@ -27,10 +27,12 @@
 		color: #8F8F8F
 		text-decoration: none
 		cursor: pointer
+		margin-top: 8px 
 		+r(1160)
 			position: absolute
 			bottom: 14px
 			right: 0  
+			margin: 0 
 		+r(910)
 			display: none
 		i
@@ -48,7 +50,7 @@
 			margin-bottom: 0 
 		.footer__right
 			border-bottom: 1px solid #E1E1E1 
-			padding-bottom: 14px 
+			padding-bottom: 15px 
 			+r(910)
 				border-bottom: none 
 	.footer__copy
@@ -98,13 +100,13 @@
 	.footer__logo
 		+s(smalllogo)
 		display: inline-block
-		margin-bottom: 15px 
+		margin-bottom: 13px 
 	.footer__nav
 		font-size: 11px 
-		list-style: non
+		list-style: none
 		font-weight: bold
 		li
-			margin-bottom: 10px 
+			margin-bottom: 8px 
 		a
 			text-decoration: none
 			color: #111111 
@@ -130,6 +132,7 @@
 	.footer__cat
 		float: left
 		margin-right: 25px 
+		margin-top: 8px 
 		+r(910)
 			display: none
 		dt
@@ -160,5 +163,3 @@
 			&:hover
 				+sp(#{$s}h)
 
-.footer,.header,.tbanner
-	display: none
