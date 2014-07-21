@@ -150,7 +150,7 @@ body { padding: 0 20px; }
 
 .l { *zoom: 1; padding-top: 18px; }
 .l:after { content: " "; display: table; clear: both; }
-.l .l-col1 { float: left; width: 240px; }
+.l .l-col1 { float: left; width: 240px; position: relative; }
 @media only screen and (max-width: 910px) { .l .l-col1 { float: none; width: auto; margin: 0; } }
 .l .l-col2 { float: left; width: 100%; margin-left: -240px; }
 @media only screen and (max-width: 1000px) { .l .l-col2 { float: right; } }
