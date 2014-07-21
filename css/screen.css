@@ -153,13 +153,13 @@ body { padding: 0 20px; }
 .l .l-col1 { float: left; width: 240px; }
 @media only screen and (max-width: 910px) { .l .l-col1 { float: none; width: auto; margin: 0; } }
 .l .l-col2 { float: left; width: 100%; margin-left: -240px; }
-@media only screen and (max-width: 1240px) { .l .l-col2 { float: right; } }
+@media only screen and (max-width: 1000px) { .l .l-col2 { float: right; } }
 @media only screen and (max-width: 910px) { .l .l-col2 { float: none; width: auto; margin: 0; } }
 .l .l-col2 .l-col2inner { margin: 0 295px; }
 @media only screen and (max-width: 910px) { .l .l-col2 .l-col2inner { margin: 0; } }
-@media only screen and (max-width: 1240px) { .l .l-col2 .l-col2inner { margin-right: 0; } }
+@media only screen and (max-width: 1000px) { .l .l-col2 .l-col2inner { margin-right: 0; } }
 .l .l-col3 { float: right; width: 240px; margin-left: -240px; }
-@media only screen and (max-width: 1240px) { .l .l-col3 { margin-left: 0; float: left; clear: left; } }
+@media only screen and (max-width: 1000px) { .l .l-col3 { margin-left: 0; float: left; clear: left; } }
 @media only screen and (max-width: 910px) { .l .l-col3 { float: none; width: auto; margin: 0; } }
 
 .topbanner { margin: 0 auto; overflow: hidden; max-width: 1240px; }
@@ -212,7 +212,7 @@ body { padding: 0 20px; }
 .topitem .topitem__title a:hover { color: #2a71df; }
 .topitem.topitem_big { border-bottom: 1px solid #e1e1e1; padding-bottom: 23px; margin-bottom: 23px; }
 .topitem.topitem_big .topitem__pic { float: left; margin-right: 20px; width: 64%; }
-@media only screen and (max-width: 850px) { .topitem.topitem_big .topitem__pic { float: none; width: auto; margin-bottom: 14px; margin-right: 15px; } }
+@media only screen and (max-width: 1150px) { .topitem.topitem_big .topitem__pic { float: none; width: auto; margin-bottom: 14px; margin-right: 15px; } }
 .topitem.topitem_small { width: 46%; }
 .topitem.topitem_small .topitem__pic { margin-bottom: 19px; }
 @media only screen and (max-width: 850px) { .topitem.topitem_small .topitem__pic { float: left; width: 50%; margin-right: 20px; } }
