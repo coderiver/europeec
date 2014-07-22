@@ -2,201 +2,204 @@
 .topbanner
 	margin: 0 auto
 	overflow: hidden
-	max-width: 1240px   
+	max-width: 1240px
 	+r(850)
 		display: none
 
 .spec
-	height: 51px 
+	height: 51px
 	text-align: center
-	font-size: 17px 
+	font-size: 17px
 	font-style: italic
-	line-height: 51px 
-	font-family: Georgia,serif 
-	color: #fff 
-	margin-bottom: 11px 
+	line-height: 51px
+	font-family: Georgia,serif
+	color: #fff
+	margin-bottom: 11px
 	display: block
 	text-decoration: none
 	+r(850)
-		height: auto 
-		line-height: 1.1 
-		padding: 15px 
+		height: auto
+		line-height: 1.1
+		padding: 15px
 		background-size: cover !important
-		
+
 		b
 			display: block
 	b
 		font-weight: bold
-		color: #FEDE36 
+		color: #FEDE36
 
 .head
-	border-bottom: 2px solid #E0E0E0 
-	padding-bottom: 11px 
+	border-bottom: 2px solid #E0E0E0
+	padding-bottom: 11px
 	position: relative
-	margin-bottom: 19px 
+	margin-bottom: 19px
 	&.head_margin
-		padding-left: 50px 
+		padding-left: 50px
 	h2
 		font-weight: normal
 		+b
-		font-size: 16px 
+		font-size: 16px
 		color: #919295
 	.head__more
 		position: absolute
 		right: 0
-		top: 5px 
-		text-decoration: none 
+		top: 5px
+		text-decoration: none
 		@extend %arrow
 	.head__morealt
 		i
-			+s(arrowbottom) 
+			+s(arrowbottom)
 .b
-	margin-bottom: 20px 
+	margin-bottom: 20px
 .news
 	.news__title
 		font-weight: bold
 		font-size: 14px
-		color: #171717 
-		padding-left: 50px 
-		margin-bottom: 10px 
-		margin-top: 20px 
+		color: #171717
+		padding-left: 50px
+		margin-bottom: 10px
+		margin-top: 20px
 	.news__more
-		margin-left: 50px 
+		margin-left: 50px
 		font-weight: bold
 		display: inline-block
 		@extend %arrow
 
 .ni
 	+clr
-	padding-bottom: 10px 
-	margin-left: 50px 
+	padding-bottom: 10px
+	margin-left: 50px
 	position: relative
 	min-height: 1em
-	border-bottom: 1px dotted #C0C0C0 
+	border-bottom: 1px dotted #C0C0C0
 	color: #2F2F2F
 	display: block
-	text-decoration: none  
-	margin-bottom: 8px 
+	text-decoration: none
+	margin-bottom: 8px
 	&.is-important
 		font-weight: bold
 		color: #111111
 		a
-			color: #111111 
+			color: #111111
 		.ni__date
-			color: #111 
+			color: #111
 	a
 		color: #2F2F2F
-		text-decoration: none 
+		text-decoration: none
 	.ni__date
 		color: #9C9C9C
 		position: absolute
 		left: -50px
 
 .banner
-	margin-bottom: 20px 
+	margin-bottom: 20px
 
 .vote
-	margin-bottom: 25px 
+	margin-bottom: 25px
 	.vote__title
-		font-size: 18px 
+		font-size: 18px
 		+cab
 		line-height: 1.1
-		color: #525252  
-		margin-bottom: 16px 
+		color: #525252
+		margin-bottom: 16px
 	.vote__options
-		margin-left: 30px 
+		margin-left: 30px
 		list-style: none
-		margin-bottom: 18px 
+		margin-bottom: 18px
 		li
-			padding-left: 23px 
+			padding-left: 23px
 			position: relative
-			margin-bottom: 9px 
-			color: #4D4D4D 
+			margin-bottom: 9px
+			color: #4D4D4D
 			input
 				position: absolute
-				left: 0 
+				left: 0
 	.vote__submit
-		margin-left: 30px 
+		margin-left: 30px
 		border-top: 1px solid #E1E1E1
-		padding-top: 10px  
-		padding-left: 23px 
+		padding-top: 10px
+		padding-left: 23px
 		a
 			@extend %arrow
 .toparea
 	+clr
-	margin-bottom: 23px 
+	margin-bottom: 23px
 .topitem
 	+clr
 	.topitem__pic
+		display: block
 		img
 			display: block
-			width: 100% 
+			width: 100%
 	.topitem__content
 		overflow: hidden
 		p
-			font-size: 13px 
-			color: #4D4D4D 
-			line-height: 1.38 
+			font-size: 13px
+			color: #4D4D4D
+			line-height: 1.38
+			margin-top: 18px
 	.topitem__title
 		+cab
 		color: #181818
-		line-height: 1.1  
-		font-size: 24px 
+		line-height: 1.1
+		font-size: 24px
 		position: relative
-		top: -4px 
-		margin-bottom: 18px 
+		top: -4px
 		+r(850)
 			top: 0
-			font-size: 20px  
+			font-size: 20px
 		a
 			color: #181818
-			text-decoration: none 
+			text-decoration: none
 			&:hover
-				color: #2A71DF  
+				color: #2A71DF
 	&.topitem_big
 		border-bottom: 1px solid #E1E1E1
-		padding-bottom: 23px  
-		margin-bottom: 23px 
-		
+		padding-bottom: 23px
+		margin-bottom: 23px
+
 		.topitem__pic
 			float: left
-			margin-right: 20px 
+			margin-right: 20px
 			width: 64%
 			+r(1150)
 				float: none
 				width: auto
-				margin-bottom: 14px 
-				margin-right: 15px 
+				margin-bottom: 14px
+				margin-right: 15px
 	&.topitem_small
-		width: 46% 
+		width: 46%
 		.topitem__pic
-			margin-bottom: 19px 
+			margin-bottom: 19px
 			+r(850)
 				float: left
 				width: 50%
-				margin-right: 20px  
+				margin-right: 20px
 			img
 				display: block
-				width: 100% 
-				
+				width: 100%
+
 		.topitem__title
-			font-size: 18px 
+			font-size: 18px
 			+cab
-			color: #111111 
+			color: #111111
 			+r(850)
-				font-size: 14px 
+				font-size: 14px
 				overflow: hidden
-				line-height: 1.2 
+				line-height: 1.2
 			a
 				text-decoration: none
-				color: #111111 
+				color: #111111
 				&:hover
-					color: #2A71DF  
+					color: #2A71DF
 		p
 			+r(850)
 				display: none
 	&.topitem_left
-		float: left 
+		float: left
+		padding-right: 4%
+		border-right: 1px solid #E1E1E1
 		+r(850)
 			width: auto
 			float: none
@@ -207,22 +210,22 @@
 			float: none
 
 .smbanner
-	margin-bottom: 20px 
+	margin-bottom: 20px
 	width: 100%
-	overflow: hidden 
+	overflow: hidden
 .sw
-	font-size: 14px 
+	font-size: 14px
 	color: #111111
-	margin-bottom: 17px 
+	margin-bottom: 17px
 	overflow: hidden
 	white-space: nowrap
 	overflow: auto
-	+b 
-	font-size: 0 
+	+b
+	font-size: 0
 	ul
 		list-style: none
 		border-bottom: 1px solid #DEDEDE
-		+clr 
+		+clr
 	li
 		//float: left
 		display: inline-block
@@ -237,64 +240,64 @@
 		text-decoration: none
 		color: #111111
 		padding: 11px 12px
-		//border: 1px solid #fff  
+		//border: 1px solid #fff
 		position: relative
-		top: 1px 
-		border-bottom: none 
+		top: 1px
+		border-bottom: none
 		&:before
 			position: absolute
-			top: 12px 
-			height: 17px 
+			top: 12px
+			height: 17px
 			border-right: 1px solid #DFDFDF
 			right: -1px
-			content: ' '  
+			content: ' '
 		&.is-active,&:hover
-			color: #898B8E 
-			//border-color: #D7D7D7 
+			color: #898B8E
+			//border-color: #D7D7D7
 			background: #fff
 			border: 1px solid #D7D7D7
-			border-bottom: none 
+			border-bottom: none
 			padding: 10px 11px 14px 11px
-			//margin-left: -1px 
+			//margin-left: -1px
 			&:before
 				display: none
 .entry
 	+clr
-	padding-bottom: 15px 
-	margin-bottom: 15px 
-	border-bottom: 1px dotted #C0C0C0 
+	padding-bottom: 15px
+	margin-bottom: 15px
+	border-bottom: 1px dotted #C0C0C0
 	position: relative
-	padding-right: 35px 
+	padding-right: 35px
 	.entry__pic
 		float: left
-		margin-right: 20px 
+		margin-right: 20px
 	.entry__content
 		overflow: hidden
 		display: block
 		a
 			text-decoration: none
-			color: #6D6D6D 
+			color: #6D6D6D
 			&:hover
 				strong
-					color: #2A71DF 
+					color: #2A71DF
 		p
 			+ca
 			color: #6D6D6D
-			font-size: 14px  
+			font-size: 14px
 			line-height: 1.2
 			strong
 				font-weight: normal
-				color: #111111 
+				color: #111111
 				+cab
 	.entry__label
 		display: inline-block
-		height: 17px 
+		height: 17px
 		line-height: 17px
-		font-size: 12px  
+		font-size: 12px
 		color: #2B2B2B
 		margin-bottom: 8px
 		padding: 0 6px
-		background: #E9E9E9 
+		background: #E9E9E9
 		position: relative
 		text-decoration: none
 		&:before
@@ -302,158 +305,159 @@
 			right: -4px
 			top: 0
 			content: ' '
-			+s(label)  
+			+s(label)
 		&.is-hot
-			background: #FEE392 
+			background: #FEE392
 			&:before
 				+s(labelhot)
 	.entry__comments
 		position: absolute
 		top: 0
 		right: 0
-		+s(comments)  
+		+s(comments)
 		line-height: 13px
-		font-size: 10px  
+		font-size: 10px
 		color: #28468E
-		text-decoration: none 
+		text-decoration: none
 		text-align: center
 		&.is-empty
 			color: #9BA3BD
 		&:hover
 			+sp(commentsh)
 			color: #fff
-		
+
 .pagi
-	margin-bottom: 20px 
+	margin-bottom: 20px
 	a
 		text-decoration: none
 		color: #111111
 		display: inline-block
-		vertical-align: middle 
+		vertical-align: middle
 		border: 1px solid #fff
-		width: 20px 
-		height: 20px 
+		width: 20px
+		height: 20px
 		line-height: 20px
 		text-align: center
-		margin-right: 5px  
+		margin-right: 5px
+		&:hover
+			color: #246de2
 		&.is-active
 			font-weight: bold
-			color: #9A9A9A 
-			border-color: #D7D7D7 
+			color: #9A9A9A
+			border-color: #D7D7D7
 
 	.pagi__prev,.pagi__next
-		display: inline-block 
+		display: inline-block
 		border-style: none
-		
+
 	.pagi__prev
 		+s(prev)
 	.pagi__next
 		+s(next)
 	.pagi__more
-		margin-left: 32px  
+		margin-left: 32px
 		border-style: none
 		height: auto
 		width: auto
 		@extend %arrow
 
 .post
-	margin-bottom: 10px 
+	margin-bottom: 10px
 	display: block
 	text-decoration: none
-	color: #111111 
+	color: #111111
 	cursor: pointer
 	+clr
 	&:last-child
 		.post__pic
-			border-bottom: none 
+			border-bottom: none
 	.post__pic
 		float: left
-		padding-bottom: 10px 
-		border-bottom: 1px dotted #C4C4C4 
-		margin-right: 16px 
+		padding-bottom: 10px
+		border-bottom: 1px dotted #C4C4C4
+		margin-right: 16px
 	.post__person
 		color: #0E4AAB
-		margin-bottom: 8px 
+		margin-bottom: 8px
 		line-height: 1.25
 		position: relative
-		top: -2px  
+		top: -2px
 		font-weight: normal
-		font-size: 12px 
-	.post__title 
+		font-size: 12px
+	.post__title
 		font-weight: bold
 	&:hover
 		.post__title
-			color: #2A71DF 
+			color: #2A71DF
 
 
 
 .editors
 	position: relative
-	padding: 18px 16px 16px 16px 
+	padding: 18px 16px 16px 16px
 	background: #F6F6F6
-	border: 1px solid #D0D0D0  
+	border: 1px solid #D0D0D0
 	.editors__icon
 		position: absolute
-		top: -9px 
-		left: 17px 
+		top: -9px
+		left: 17px
 		+s(editors)
 	.editors__title
-		font-size: 16px 
+		font-size: 16px
 		+b
 		color: #3E4046
-		margin-bottom: 15px 
+		margin-bottom: 15px
 	.editors__slide
-		//width: 205px 
-		width: 100% 
+		//width: 205px
+		width: 100%
 		a
 			text-decoration: none
-			color: #111111 
+			color: #111111
 			display: block
-			width: 100% 
+			width: 100%
 		img
 			display: block
 			width: 100%
 		span
 			display: block
-			margin-top: 11px 
+			margin-top: 11px
 			font-weight: bold
-			color: #111 
+			color: #111
 	.editors__nav
 		float: right
 		position: relative
-		top: 2px 
+		top: 2px
 		&>div
 			display: inline-block
 			cursor: pointer
 		.editors__next
 			+s(next)
-			margin-left: 9px 
+			margin-left: 9px
 		.editors__prev
 			+s(prev)
 .fotos
-	margin-bottom: 24px 
+	margin-bottom: 24px
 	.fotos__item
-		width: 100% 
+		width: 100%
 		a
 			text-decoration: none
-			color: #111 
+			color: #111
 			font-weight: bold
 			display: block
 		img
-			margin-bottom: 12px 
+			margin-bottom: 12px
 			display: block
-			width: 100% 
+			width: 100%
 	.fotos__nav
 		border-bottom: 1px dotted #CDCDCD
 		margin: 0 18px
-		margin-top: 16px   
+		margin-top: 16px
 		position: relative
 		text-align: center
-
-		height: 4px  
+		height: 4px
 	.fotos__prev,.fotos__next
 		position: absolute
-		top: 0px  
+		top: 0px
 		cursor: pointer
 	.fotos__prev
 		+s(prev)
@@ -465,18 +469,183 @@
 		display: inline-block
 		background: #fff
 		position: relative
-		top: -10px  
-		padding-right: 8px 
-		font-size: 0 
+		top: -10px
+		padding-right: 8px
+		font-size: 0
 		span
 			cursor: pointer
 			+hide-text
-			width: 5px 
-			height: 5px 
+			width: 5px
+			height: 5px
 			display: inline-block
 			background: #4F4F4F
-			margin-left: 8px 
+			margin-left: 8px
 			&.cycle-pager-active
-				background: #D1D1D1 
+				background: #D1D1D1
 			&:hover
-				background: #2A70DF 
+				background: #2A70DF
+
+
+.quote
+	margin: 19px 0 39px
+	blockquote
+		padding: 15px 30px
+		position: relative
+		font-style: italic
+		color: #4D4D4D
+		line-height: 1.42
+		&:before
+			content: ""
+			display: block
+			+s(quoteb)
+			position: absolute
+			top: 0
+			left: 0
+		&:after
+			content: ""
+			display: block
+			+s(quotea)
+			position: absolute
+			bottom: 0
+			right: 0
+		strong
+			color: #111
+			position: absolute
+			bottom: -15px
+			left: 30px
+
+.article
+	margin-bottom: 30px
+	h1
+		+cab
+		font-size: 28px
+		color: #181818
+		line-height: 1.1
+		padding-bottom: 15px
+		border-bottom: 1px solid #e6e6e6
+	p
+		color: #565656
+		font-size: 14px
+		line-height: 1.5
+		margin-bottom: 15px
+	a
+		color: #0546ae
+		text-decoration: none
+		&:hover
+			color: #246DE2
+	.article__header
+		margin-bottom: 20px
+	.article__date
+		display: block
+		color: #8c8c8c
+		margin-top: 10px
+	.article__img
+		float: left
+		width: 425px/650px*100%
+		margin: 0 25px 25px 0
+		line-height: 1.5
+		img
+			display: block
+			max-width: 100%
+			margin-bottom: 15px
+	.article__img-title
+		color: #3F3F3F
+	.article__img-autor
+		display: block
+		color: #8c8c8c
+		font-style: italic
+	.article__footer
+		margin: 15px 0
+	.article__autor
+		color: #111
+		font-weight: bold
+	.article__print
+		font-size: 11px
+		color: #8f8f8f
+		text-transform: uppercase
+		text-decoration: none
+		float: right
+		vertical-align: middle
+		span
+			vertical-align: middle
+		&:hover
+			color: #246DE2
+			.article__print-icon
+				+s(printh)
+	.article__print-icon
+		display: inline-block
+		vertical-align: middle
+		+s(print)
+		margin-left: 5px
+	.article__stats
+		padding-top: 10px
+		margin-top: 17px
+		border-top: 1px dotted #C0C0C0
+		.title
+			color: #3F3F3F
+			margin-right: 4px
+		ul
+			display: inline-block
+			margin-right: 30px
+		li
+			display: inline-block
+			position: relative
+			&:not(:last-child)
+				margin-right: 7px
+				padding-right: 7px
+				&:after
+					content: ""
+					display: block
+					+s(arrowright)
+					position: absolute
+					top: 5px
+					right: -3px
+	.social-btns
+		margin-top: 20px
+
+.comments
+	color: #3F3F3F
+	.head h2
+		display: inline-block
+	.comments__conter
+		color: #3A3D42
+		+b
+		font-size: 16px
+		margin-left: 4px
+	.comments__login
+		span
+			display: block
+	.comments__toggle
+		margin-top: 20px
+		li
+			display: inline-block
+			&:not(:last-child)
+				border-right: 1px solid #e3e3e3
+				padding-right: 7px
+				margin-right: 7px
+		a
+			color: #8f9090
+			text-decoration: none
+			&:hover, &.is-active
+				color: #0546ae
+
+.login-btn
+	display: inline-block
+	.comments__login &
+		margin: 15px 3px 0 0
+	&.login-btn_vk
+		+s(loginvk)
+	&.login-btn_fb
+		+s(loginfb)
+	&.login-btn_tw
+		+s(logintw)
+	&.login-btn_gp
+		+s(logingp)
+	&.login-btn_lj
+		+s(loginlj)
+
+
+
+
+
+
