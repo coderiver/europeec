@@ -376,7 +376,7 @@
 	display: block
 	text-decoration: none
 	color: #111111
-	cursor: pointer
+	// cursor: pointer
 	+clr
 	&:last-child
 		.post__pic
@@ -396,9 +396,13 @@
 		font-size: 12px
 	.post__title
 		font-weight: bold
-	&:hover
-		.post__title
+		text-decoration: none
+		color: #111111
+		padding-top: 2px
+		&:hover
 			color: #2A71DF
+	// &:hover
+	// 	.post__title
 
 
 
@@ -498,7 +502,8 @@
 
 .quote
 	margin: 19px 0 39px
-	blockquote
+	cite
+		display: block
 		padding: 15px 30px
 		position: relative
 		font-style: italic

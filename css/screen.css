@@ -110,6 +110,7 @@ a { color: #0e4aab; }
 .footer .footer__left { float: left; width: 210px; padding-left: 30px; }
 @media only screen and (max-width: 910px) { .footer .footer__left { float: none; width: auto; padding: 0; } }
 .footer .footer__gototop { float: right; margin-right: 30px; font-size: 11px; text-transform: uppercase; color: #8f8f8f; text-decoration: none; cursor: pointer; margin-top: 8px; }
+.footer .footer__gototop:hover { color: #246de2; }
 @media only screen and (max-width: 1160px) { .footer .footer__gototop { position: absolute; bottom: 14px; right: 0; margin: 0; } }
 @media only screen and (max-width: 910px) { .footer .footer__gototop { display: none; } }
 .footer .footer__gototop i { background: url('../img/icons-s66aa06fd5e.png') 0 -633px no-repeat; width: 7px; height: 7px; margin-left: 7px; display: inline-block; }
@@ -288,13 +289,13 @@ body { padding: 0 20px; }
 .pagi .pagi__next { background: url('../img/icons-s66aa06fd5e.png') 0 -665px no-repeat; width: 7px; height: 7px; }
 .pagi .pagi__more { margin-left: 32px; border-style: none; height: auto; width: auto; }
 
-.post { margin-bottom: 10px; display: block; text-decoration: none; color: #111111; cursor: pointer; *zoom: 1; }
+.post { margin-bottom: 10px; display: block; text-decoration: none; color: #111111; *zoom: 1; }
 .post:after { content: " "; display: table; clear: both; }
 .post:last-child .post__pic { border-bottom: none; }
 .post .post__pic { float: left; padding-bottom: 10px; border-bottom: 1px dotted #c4c4c4; margin-right: 16px; }
 .post .post__person { color: #0e4aab; margin-bottom: 8px; line-height: 1.25; position: relative; top: -2px; font-weight: normal; font-size: 12px; }
-.post .post__title { font-weight: bold; }
-.post:hover .post__title { color: #2a71df; }
+.post .post__title { font-weight: bold; text-decoration: none; color: #111111; padding-top: 2px; }
+.post .post__title:hover { color: #2a71df; }
 
 .editors { position: relative; padding: 18px 16px 16px 16px; background: #f6f6f6; border: 1px solid #d0d0d0; }
 .editors .editors__icon { position: absolute; top: -9px; left: 17px; background: url('../img/icons-s66aa06fd5e.png') 0 -261px no-repeat; width: 19px; height: 22px; }
@@ -322,10 +323,10 @@ body { padding: 0 20px; }
 .fotos .fotos__pagi span:hover { background: #2a70df; }
 
 .quote { margin: 19px 0 39px; }
-.quote blockquote { padding: 15px 30px; position: relative; font-style: italic; color: #4d4d4d; line-height: 1.42; }
-.quote blockquote:before { content: ""; display: block; background: url('../img/icons-s66aa06fd5e.png') 0 -231px no-repeat; width: 25px; height: 20px; position: absolute; top: 0; left: 0; }
-.quote blockquote:after { content: ""; display: block; background: url('../img/icons-s66aa06fd5e.png') 0 -201px no-repeat; width: 26px; height: 20px; position: absolute; bottom: 0; right: 0; }
-.quote blockquote strong { color: #111111; position: absolute; bottom: -15px; left: 30px; }
+.quote cite { display: block; padding: 15px 30px; position: relative; font-style: italic; color: #4d4d4d; line-height: 1.42; }
+.quote cite:before { content: ""; display: block; background: url('../img/icons-s66aa06fd5e.png') 0 -231px no-repeat; width: 25px; height: 20px; position: absolute; top: 0; left: 0; }
+.quote cite:after { content: ""; display: block; background: url('../img/icons-s66aa06fd5e.png') 0 -201px no-repeat; width: 26px; height: 20px; position: absolute; bottom: 0; right: 0; }
+.quote cite strong { color: #111111; position: absolute; bottom: -15px; left: 30px; }
 
 .article { margin-bottom: 30px; }
 .article h1 { font-family: "Cambria", sans-serif; font-weight: bold; font-size: 28px; color: #181818; line-height: 1.1; padding-bottom: 15px; border-bottom: 1px solid #e6e6e6; }

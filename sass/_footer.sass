@@ -1,11 +1,11 @@
 .fbanner
 	padding: 11px 0
-	border-top: 1px solid #DFDFDF 
+	border-top: 1px solid #DFDFDF
 	overflow: hidden
-	
+
 .footer
 	border-top: 1px solid #fff
-	box-shadow:  0 -3px 0 #E0E0E0, inset 0 1px 0 #E0E0E0 
+	box-shadow:  0 -3px 0 #E0E0E0, inset 0 1px 0 #E0E0E0
 	padding: 33px 0 42px 0
 	position: relative
 	+r(910)
@@ -13,71 +13,73 @@
 		box-shadow: none
 	.footer__left
 		float: left
-		width: 210px 
-		padding-left: 30px 
+		width: 210px
+		padding-left: 30px
 		+r(910)
 			float: none
-			width: auto 
-			padding: 0 
+			width: auto
+			padding: 0
 	.footer__gototop
 		float: right
-		margin-right: 30px 
-		font-size: 11px 
+		margin-right: 30px
+		font-size: 11px
 		text-transform: uppercase
 		color: #8F8F8F
 		text-decoration: none
 		cursor: pointer
-		margin-top: 8px 
+		margin-top: 8px
+		&:hover
+			color: #246DE2
 		+r(1160)
 			position: absolute
 			bottom: 14px
-			right: 0  
-			margin: 0 
+			right: 0
+			margin: 0
 		+r(910)
 			display: none
 		i
 			+s(arrowtop)
-			margin-left: 7px 
+			margin-left: 7px
 			display: inline-block
 	.footer__right
-		margin-left: 294px 
+		margin-left: 294px
 		position: relative
 		+r(910)
-			margin: 0 
+			margin: 0
 	.footer__top
-		margin-bottom: 25px 
+		margin-bottom: 25px
 		+r(910)
-			margin-bottom: 0 
+			margin-bottom: 0
 		.footer__right
-			border-bottom: 1px solid #E1E1E1 
-			padding-bottom: 15px 
+			border-bottom: 1px solid #E1E1E1
+			padding-bottom: 15px
 			+r(910)
-				border-bottom: none 
+				border-bottom: none
 	.footer__copy
-		font-size: 12px 
-		color: #888888 
-		margin-right: 255px 
-		line-height: 17px  
+		font-size: 12px
+		color: #888888
+		margin-right: 255px
+		line-height: 17px
 		+r(910)
-			margin: 0 
-			padding-top: 26px 
-			margin-bottom: 22px 
+			margin: 0
+			padding-top: 26px
+			margin-bottom: 22px
 	.footer__like
 		text-align: left
-		margin-top: 27px 
+		margin-top: 27px
 		+r(910)
-			margin-top: 10px 
-			padding-bottom: 28px 
-			border-bottom: 1px solid #E1E1E1 
+			margin-top: 10px
+			padding-bottom: 28px
+			border-bottom: 1px solid #E1E1E1
 			display: block
 	.footer__other
 		float: right
-		width: 242px 
-		//margin-right: 33px 
+		width: 242px
+		//margin-right: 33px
 		text-align: right
 		position: absolute
-		right: 33px 
-		top: 0 
+		right: 33px
+		top: 0
 		+r(910)
 			float: none
 			width: auto
@@ -86,36 +88,36 @@
 	.footer__dev
 		color: #4D4D4D
 		text-decoration: none
-		margin-bottom: 17px  
+		margin-bottom: 17px
 		a
 			+hide-text
 			+s(vintage)
 			display: inline-block
 			vertical-align: bottom
 			position: relative
-			top: -3px 
+			top: -3px
 			+r(910)
 				display: block
 				top: 4px
 	.footer__logo
 		+s(smalllogo)
 		display: inline-block
-		margin-bottom: 13px 
+		margin-bottom: 13px
 	.footer__nav
-		font-size: 11px 
+		font-size: 11px
 		list-style: none
 		font-weight: bold
 		li
-			margin-bottom: 8px 
+			margin-bottom: 8px
 		a
 			text-decoration: none
-			color: #111111 
+			color: #111111
 	.footer__topics
 		clear: both
 		+r(1160)
-			margin-right: 100px 
+			margin-right: 100px
 		+r(910)
-			margin-top: 21px 
+			margin-top: 21px
 		ul
 			list-style: none
 		li
@@ -123,31 +125,31 @@
 			font-size: 0
 			+r(910)
 				display: block
-				margin-bottom: 4px 
+				margin-bottom: 4px
 		a
-			font-size: 14px 
+			font-size: 14px
 			font-weight: bold
 			@extend %arrow
-			margin-right: 23px 
+			margin-right: 23px
 	.footer__cat
 		float: left
-		margin-right: 25px 
-		margin-top: 8px 
+		margin-right: 25px
+		margin-top: 8px
 		+r(910)
 			display: none
 		dt
-			margin-bottom: 16px 
+			margin-bottom: 16px
 			text-transform: uppercase
 			+b
-			font-size: 12px 
+			font-size: 12px
 			color: #2A2A2A
 		ul
 			list-style: none
 		li
-			margin-bottom: 8px 
+			margin-bottom: 8px
 		a
 			text-decoration: none
-			color: #2F2F2F 
+			color: #2F2F2F
 	.footer__counters
 		+r(910)
 			display: none
@@ -156,7 +158,7 @@
 
 	a
 		display: inline-block
-		margin-right: 29px 
+		margin-right: 29px
 	@each $s in fb,tw,rss
 		.socials__#{$s}
 			+s(#{$s})
