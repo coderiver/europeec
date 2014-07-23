@@ -173,6 +173,12 @@ body { padding: 0 20px; }
 .l .l-col3 { float: right; width: 240px; margin-left: -240px; }
 @media only screen and (max-width: 1000px) { .l .l-col3 { margin-left: 0; float: left; clear: left; } }
 @media only screen and (max-width: 910px) { .l .l-col3 { float: none; width: auto; margin: 0; } }
+.l.l_twocolumns .l-col2 { margin-left: 0; float: left; width: 100%; margin: 0; }
+@media only screen and (max-width: 820px) { .l.l_twocolumns .l-col2 { float: none; width: auto; } }
+.l.l_twocolumns .l-col2 .l-col2inner { margin-right: 295px; margin-left: 0; }
+@media only screen and (max-width: 820px) { .l.l_twocolumns .l-col2 .l-col2inner { margin: 0; } }
+.l.l_twocolumns .l-col3 { float: left; width: 240px; margin-left: -240px; clear: none; }
+@media only screen and (max-width: 820px) { .l.l_twocolumns .l-col3 { margin: 0; float: none; width: auto; } }
 
 .topbanner { margin: 0 auto; overflow: hidden; max-width: 1240px; }
 @media only screen and (max-width: 850px) { .topbanner { display: none; } }

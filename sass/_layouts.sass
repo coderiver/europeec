@@ -46,3 +46,27 @@ body
 			float: none
 			width: auto
 			margin: 0 
+	&.l_twocolumns
+		.l-col2
+			margin-left: 0
+			float: left
+			width: 100%
+			margin: 0 
+			+r(820)
+				float: none
+				width: auto
+			.l-col2inner
+				margin-right: 295px  
+				margin-left: 0 
+				+r(820)
+					margin: 0 
+		.l-col3
+			float: left
+			width: 240px
+			margin-left: -240px 
+			clear: none
+			+r(820)
+				margin: 0 
+				float: none
+				width: auto 
+			// тут надо добавить их сползание как выше, но момент в который будет сползать 
