@@ -36,6 +36,8 @@
 	margin-bottom: 19px
 	&.head_margin
 		padding-left: 50px
+	&.head_searchresults
+		padding-left: 32px
 	h2
 		font-weight: normal
 		+b
@@ -983,7 +985,8 @@ blockquote
 		overflow: visible
 
 .author-articles
-	padding-left: 32px
+	margin: 0 0 25px 32px
+	position: relative
 	+clr
 	.author-articles__img
 		float: left
@@ -999,8 +1002,27 @@ blockquote
 		font-size: 14px
 		color: #9a9a9a
 		line-height: 1.214
-		padding-right: 50px
 		margin-top: 10px
+	.author-articles__rss
+		+s(rss)
+		position: absolute
+		top: 0
+		right: 0
+		&:hover
+			+s(rssh)
+
+.topic-search
+	margin: 0 0 20px 32px
+	span
+		font-size: 14px
+		color: #9A9A9A
+	h1
+		font-size: 28px
+		color: #111
+		margin-top: 7px
+		line-height: 1.1
+
+
 
 
 
