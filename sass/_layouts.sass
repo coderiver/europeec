@@ -1,72 +1,74 @@
 // default layout
 body
 	padding: 0 20px
-	+r(850) 
-		padding: 0 15px 
+	+r(850)
+		padding: 0 15px
 .outer
-	max-width: 1240px 
-	margin: 0 auto 
+	max-width: 1240px
+	margin: 0 auto
 .l
 	+clr
-	padding-top: 18px 
+	padding-top: 18px
 	.l-col1
 		float: left
 		width: 240px
-		//margin-left: -100% 
+		//margin-left: -100%
 		position: relative
 		+r(910)
 			float: none
 			width: auto
-			margin: 0 
+			margin: 0
 	.l-col2
 		float: left
-		width: 100% 
-		margin-left: -240px 
+		width: 100%
+		margin-left: -240px
 		+r(1000)
 			float: right
 		+r(910)
 			float: none
 			width: auto
-			margin: 0 
+			margin: 0
 		.l-col2inner
-			margin: 0 295px 
+			margin: 0 295px
 			+r(910)
-				margin: 0 
+				margin: 0
 			+r(1000)
-				margin-right: 0 
+				margin-right: 0
 	.l-col3
 		float: right
 		width: 240px
-		margin-left: -240px 
+		margin-left: -240px
 		+r(1000)
 			margin-left: 0
 			float: left
-			clear: left 
+			clear: left
 		+r(910)
 			float: none
 			width: auto
-			margin: 0 
+			margin: 0
 	&.l_twocolumns
 		.l-col2
 			margin-left: 0
 			float: left
 			width: 100%
-			margin: 0 
+			margin: 0
 			+r(820)
 				float: none
 				width: auto
 			.l-col2inner
-				margin-right: 295px  
-				margin-left: 0 
+				margin-right: 295px
+				margin-left: 0
+				+r(1000)
+					margin-right: 270px
 				+r(820)
-					margin: 0 
+					margin: 0
 		.l-col3
 			float: left
 			width: 240px
-			margin-left: -240px 
+			margin-left: -240px
 			clear: none
 			+r(820)
-				margin: 0 
+				margin: 0
 				float: none
-				width: auto 
-			// тут надо добавить их сползание как выше, но момент в который будет сползать 
+				width: auto
+			// тут надо добавить их сползание как выше, но момент в который будет сползать

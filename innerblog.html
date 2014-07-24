@@ -78,7 +78,7 @@
 			<li><a href="#">Подрубрика 2</a></li>
 			<li><a href="#">Подрубрика 3</a></li>
 			<li><a href="#">Подрубрика 4</a></li>
-			<li><a href="#">Подрубрика 5</a></li>
+			<li><a class="is-active" href="#">Подрубрика 5</a></li>
 			<li><a href="#">Подрубрика 6</a></li>
 			<li><a href="#">Подрубрика 7</a></li>
 		</ul>
@@ -101,7 +101,7 @@
 				<!-- begin article  -->
 				<article class="article">
 					<header class="article__header">
-					<div class="article__header-right"><img src="img/author.jpg" alt=""></div>
+					<div class="article__header-right"><div class="author"></div></div>
 						<h1>Пентагон обсудит с Кабмином поддержку оборонной сферы – Пайетт</h1>
 						<span class="article__author">Евгений Макаренко,</span>
 						<span class="article__date">Пятница, 12 июня 2014, 19:48</span>
@@ -184,13 +184,14 @@
 								<span>Версия для печати</span> <i class="article__print-icon"></i>
 							</a>
 							<div class="article__stats">
+								<div class="row">
 									<span class="title">Раздел:</span>
-									<ul>
-										<li><a href="#">Бизнес и финансы</a></li>
-										<li><a href="#">Подрубрика 5</a></li>
-									</ul>
+									<a href="#">Бизнес и финансы</a>
+									<i class="arrow"></i>
+									<a href="#">Подрубрика 5</a>
 									<span class="title">Тема:</span>
 									<a href="#">Санкции против России</a>
+								</div>
 							</div>
 							<div class="social-btns"><img src="img/socialbtns.png" alt=""></div>
 						</footer>
@@ -199,11 +200,9 @@
 				</article>
 				<!-- end article -->
 
+				<div class="head"><h2>Читайте также</h2></div>
 				<!-- begin read-more -->
 				<div class="read-more">
-					<div class="head">
-						<h2>Читайте также</h2>
-					</div>
 					<!-- begin topitem  -->
 					<div class="topitem topitem_smaller">
 						<div class="topitem__pic">
@@ -252,13 +251,19 @@
 						<div class="comments__write-left">
 							<div class="comment__img"><img src="img/comment.jpg" alt=""></div>
 							<div class="comment__content">
-							<span class="comment__author">Александр<br>Бакушинский</span>
-							<span class="item">(Вы)</span>
-						</div>
+								<span class="comment__author">Александр<br>Бакушинский</span>
+								<span class="item">(Вы)</span>
+							</div>
 						</div>
 						<div class="comments__write-right">
 							<textarea rows="5"></textarea>
 							<a href="#" class="write">Написать<i></i></a>
+							<div class="comments__write-alert">
+								<div class="inner">
+									<strong>Внимание!</strong>
+									<p>Необходимо заполнить форму</p>
+								</div>
+							</div>
 						</div>
 					</div>
 					<ul class="comments__toggle">
