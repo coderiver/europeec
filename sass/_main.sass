@@ -577,6 +577,7 @@ blockquote
 	margin-bottom: 30px
 	color: #565656
 	line-height: 1.5
+	font-size: 14px
 	// .l_twocolumns &
 	// 	margin-bottom: 110px
 	h1
@@ -584,21 +585,7 @@ blockquote
 		font-size: 28px
 		color: #181818
 		line-height: 1.1
-		padding-bottom: 15px
-		border-bottom: 1px solid #e6e6e6
-
-	.article__header-right + h1
-		border-bottom-color: transparent
-		position: relative
-		&:after
-			content: ""
-			display: block
-			width: 425px
-			height: 1px
-			background: #e6e6e6
-			position: absolute
-			bottom: -1px
-			left: 0
+		margin-bottom: 25px
 	h2
 		font-weight: bold
 		font-size: 20px
@@ -630,8 +617,14 @@ blockquote
 		text-decoration: none
 		&:hover
 			color: #246DE2
+	strong
+		color: #2e2e2e
 	.article__header
 		margin-bottom: 20px
+		h1
+			padding-bottom: 15px
+			margin-bottom: 0
+			border-bottom: 1px solid #e6e6e6
 	.article__header-right
 		float: right
 		margin-left: 5px
@@ -647,6 +640,18 @@ blockquote
 			position: relative
 			top: 8px
 			+s(ad)
+	.article__header-right + h1
+		border-bottom-color: transparent
+		position: relative
+		&:after
+			content: ""
+			display: block
+			width: 425px
+			height: 1px
+			background: #e6e6e6
+			position: absolute
+			bottom: -1px
+			left: 0
 	.article__date
 		display: inline-block
 		color: #8c8c8c
@@ -702,6 +707,7 @@ blockquote
 		font-weight: bold
 		font-style: italic
 		line-height: 1.714
+		color: #2E2E2E
 		padding: 30px
 		margin: 25px 2px
 		background: #f2f2f2
@@ -721,6 +727,7 @@ blockquote
 	// max-width: 425px
 	margin: 0 25px 25px 0
 	line-height: 1.5
+	font-size: 12px
 	img
 		display: block
 		max-width: 100%

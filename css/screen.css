@@ -344,10 +344,8 @@ blockquote:after { content: ""; display: block; background: url('../img/icons-s3
 .article blockquote { font-size: 14px; color: #7c7c7c; line-height: 1.714; margin: 20px 0 25px; }
 blockquote cite { color: #111111; position: absolute; bottom: -15px; left: 30px; font-weight: bold; }
 
-.article { margin-bottom: 30px; color: #565656; line-height: 1.5; }
-.article h1 { font-family: "Cambria", sans-serif; font-weight: bold; font-size: 28px; color: #181818; line-height: 1.1; padding-bottom: 15px; border-bottom: 1px solid #e6e6e6; }
-.article .article__header-right + h1 { border-bottom-color: transparent; position: relative; }
-.article .article__header-right + h1:after { content: ""; display: block; width: 425px; height: 1px; background: #e6e6e6; position: absolute; bottom: -1px; left: 0; }
+.article { margin-bottom: 30px; color: #565656; line-height: 1.5; font-size: 14px; }
+.article h1 { font-family: "Cambria", sans-serif; font-weight: bold; font-size: 28px; color: #181818; line-height: 1.1; margin-bottom: 25px; }
 .article h2 { font-weight: bold; font-size: 20px; color: #181818; margin: 30px 0; position: relative; }
 .article h2:after { content: ""; display: block; width: 22px; height: 2px; background: #e0e0e0; position: absolute; bottom: -10px; left: 0; }
 .article p { font-size: 14px; margin-bottom: 15px; }
@@ -355,11 +353,15 @@ blockquote cite { color: #111111; position: absolute; bottom: -15px; left: 30px;
 .article ol { font-size: 14px; list-style: decimal outside; margin: 15px 0 15px 30px; }
 .article a { color: #0546ae; text-decoration: none; }
 .article a:hover { color: #246de2; }
+.article strong { color: #2e2e2e; }
 .article .article__header { margin-bottom: 20px; }
+.article .article__header h1 { padding-bottom: 15px; margin-bottom: 0; border-bottom: 1px solid #e6e6e6; }
 .article .article__header-right { float: right; margin-left: 5px; text-align: right; }
 .article .article__header-right .author { position: relative; top: -14px; background: url('../img/icons-s3813cec735.png') 0 0 no-repeat; width: 262px; height: 87px; }
 @media only screen and (max-width: 1150px) { .article .article__header-right .author { background: url('../img/icons-s3813cec735.png') 0 -97px no-repeat; width: 201px; height: 85px; } }
 .article .article__header-right .ad { margin-left: 120px; position: relative; top: 8px; background: url('../img/icons-s3813cec735.png') 0 -260px no-repeat; width: 105px; height: 103px; }
+.article .article__header-right + h1 { border-bottom-color: transparent; position: relative; }
+.article .article__header-right + h1:after { content: ""; display: block; width: 425px; height: 1px; background: #e6e6e6; position: absolute; bottom: -1px; left: 0; }
 .article .article__date { display: inline-block; color: #8c8c8c; margin-top: 10px; }
 .article .article__footer { margin: 15px 0; }
 .article .article__author { color: #111111; font-weight: bold; margin-right: 5px; }
@@ -375,10 +377,10 @@ blockquote cite { color: #111111; position: absolute; bottom: -15px; left: 30px;
 .article .article__stats .arrow { display: inline-block; margin: 0 3px; background: url('../img/icons-s3813cec735.png') 0 -1085px no-repeat; width: 4px; height: 6px; }
 .article .social-btns { margin-top: 20px; }
 .article .article__wrap { margin-left: 55px; clear: both; }
-.article .important { font-size: 14px; font-weight: bold; font-style: italic; line-height: 1.714; padding: 30px; margin: 25px 2px; background: #f2f2f2; outline: 2px dashed #f2f2f2; position: relative; }
+.article .important { font-size: 14px; font-weight: bold; font-style: italic; line-height: 1.714; color: #2e2e2e; padding: 30px; margin: 25px 2px; background: #f2f2f2; outline: 2px dashed #f2f2f2; position: relative; }
 .article .important__icon { content: ""; display: block; background: url('../img/icons-s3813cec735.png') 0 -1341px no-repeat; width: 16px; height: 16px; position: absolute; top: 32px; left: -30px; }
 
-.article__img { float: left; width: 425px; margin: 0 25px 25px 0; line-height: 1.5; }
+.article__img { float: left; width: 425px; margin: 0 25px 25px 0; line-height: 1.5; font-size: 12px; }
 .article__img img { display: block; max-width: 100%; margin-bottom: 15px; }
 .article__img.article__img_left { margin-left: -55px; }
 .article__img.article__img_center { float: none; width: 560px; margin: 30px auto; }
