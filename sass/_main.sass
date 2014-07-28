@@ -49,6 +49,8 @@
 			color: #3a3d42
 	&.head_searchresults
 		padding-left: 32px
+		+r($mob)
+			padding-left: 0
 	h2
 		font-weight: normal
 		+b
@@ -309,6 +311,8 @@
 				font-size: 14px
 				overflow: hidden
 				line-height: 1.2
+			+r($mob)
+				margin-bottom: 19px
 			a
 				text-decoration: none
 				color: #111111
@@ -341,6 +345,19 @@
 				border-right: none
 			&:last-child
 				display: none
+		+r($mob)
+			float: none
+			width: 100%
+			border-right: none
+			.topitem__pic
+				float: left
+				width: percentage(144px/290px)
+				margin-right: 15px
+			.topitem__title
+				font-size: 14px
+				line-height: 1.412
+				margin-bottom: 19px
+				margin-right: 0
 	&.topitem_left
 		float: left
 		padding-right: 4%
@@ -441,7 +458,7 @@
 			font-size: 14px
 			line-height: 1.2
 			font-weight: normal
-			margin-top: 20px
+			padding-top: 20px
 			strong
 				font-weight: normal
 				color: #111111
@@ -462,7 +479,7 @@
 		background: #E9E9E9
 		position: relative
 		text-decoration: none
-		cursor: default
+		// cursor: default
 		&:before
 			position: absolute
 			right: -4px
@@ -474,7 +491,7 @@
 			&:before
 				+s(labelhot)
 	.entry__label + p
-		margin-top: 0
+		padding-top: 0
 	.entry__comments
 		position: absolute
 		top: 0
@@ -545,8 +562,8 @@
 		color: #0E4AAB
 		margin-bottom: 8px
 		line-height: 1.25
-		position: relative
-		top: -2px
+		// position: relative
+		// top: -2px
 		font-weight: normal
 		font-size: 12px
 	.post__title
@@ -792,6 +809,10 @@ blockquote
 		color: #111
 		font-weight: bold
 		margin-right: 5px
+	.article__header
+		.article__author
+			display: inline-block
+			margin-top: 10px
 	.article__print
 		font-size: 11px
 		color: #8f8f8f
@@ -923,6 +944,8 @@ blockquote
 	display: block
 	color: #8c8c8c
 	font-style: italic
+	+r($mob)
+		margin-bottom: 35px
 
 .article__slideshow
 	width: 560px
@@ -935,8 +958,6 @@ blockquote
 		margin-top: 0
 	+r($mob)
 		width: 100%
-		// .article__img-title, .article__img-author
-		// 	display: none
 .article__slide
 	float: none
 	width: 100%
@@ -944,6 +965,8 @@ blockquote
 	margin: 0
 	.article__img-title, .article__img-author
 		padding-right: 50px
+		+r($mob)
+			padding-right: 0
 .article__slidecount
 	position: absolute
 	font-size: 18px
@@ -951,6 +974,10 @@ blockquote
 	bottom: 0
 	right: 0
 	background: #FFF
+	+r($mob)
+		left: 50%
+		bottom: -2px
+		margin-left: -17px
 .article__prev, .article__next
 	display: block
 	width: 46px
@@ -964,16 +991,22 @@ blockquote
 	i
 		display: inline-block
 	+r($mob)
-		position: static
-		display: inline-block
+		bottom: 0
+		margin-bottom: 0
+		background: transparent
+
 .article__prev
 	i
 		+s(slideprev)
 	left: -46px
+	+r($mob)
+		left: 31%
 .article__next
 	i
 		+s(slidenext)
 	right: -46px
+	+r($mob)
+		right: 31%
 
 .comments
 	color: #3F3F3F
@@ -1023,10 +1056,17 @@ blockquote
 		float: left
 		width: 270px/650px*100%
 		padding-right: 10px/650px*100%
+		+r($mob)
+			float: none
 	.comments__write-right
 		float: right
 		width: 370px/650px*100%
 		position: relative
+		+r($mob)
+			float: none
+			width: 100%
+			margin-top: 15px
+			margin-bottom: 5px
 		textarea
 			width: 100%
 			border: 1px solid #d0d0d0
@@ -1052,6 +1092,9 @@ blockquote
 		top: 0
 		right: -196px
 		display: none
+		+r($mob)
+			top: -84px
+			right: 0
 		strong
 			color: #e70000
 		.inner
@@ -1064,6 +1107,8 @@ blockquote
 				position: absolute
 				top: 50%
 				left: -21px
+				+r($mob)
+					display: none
 		&.is-visible
 			display: block
 
@@ -1120,6 +1165,8 @@ blockquote
 
 .page-search
 	margin: 0 0 45px 32px
+	+r($mob)
+		margin-left: 0
 	.page-search__title
 		font-weight: normal
 		+b
@@ -1137,6 +1184,10 @@ blockquote
 		color: #9d9d9d
 		border: 1px solid #d0d0d0
 		vertical-align: top
+		+r($mob)
+			width: 100%
+			+box
+			margin-bottom: 10px
 	.page-search__btn
 		// border: 1px solid #d0d0d0
 		background: #e7e7e7
@@ -1149,6 +1200,9 @@ blockquote
 		&:hover
 			background: #246DE2
 			color: #fff
+		+r($mob)
+			display: block
+			float: left
 	.page-search__info
 		font-size: 14px
 		line-height: 1
@@ -1156,6 +1210,13 @@ blockquote
 		color: #5B5B5B
 		strong
 			color: #2e2e2e
+		+r($mob)
+			display: inline-block
+			vertical-align: top
+			margin-left: 5px
+			margin-top: 5px
+			strong
+				display: block
 
 .searchresults
 	list-style: decimal
@@ -1164,15 +1225,25 @@ blockquote
 	font-size: 14px
 	margin-left: 16px
 	li
-		margin-left: 12px
+		margin: 0 0 15px 12px
 		padding-left: 6px
+	.entry
+		margin-bottom: 0
 	.entry__content
 		overflow: visible
+	+r($mob)
+		list-style: none
+		margin-left: 0
+		li
+			margin-left: 0
+			padding-left: 0
 
 .author-articles
 	margin: 0 0 25px 32px
 	position: relative
 	+clr
+	+r($mob)
+		margin-left: 0
 	.author-articles__img
 		float: left
 		width: 150px
@@ -1195,9 +1266,16 @@ blockquote
 		right: 0
 		&:hover
 			+s(rssh)
+		+r($mob)
+			top: auto
+			bottom: -43px
+			z-index: 5
+
 
 .topic-search
 	margin: 0 0 20px 32px
+	+r($mob)
+		margin-left: 0
 	span
 		font-size: 14px
 		color: #9A9A9A
@@ -1216,6 +1294,10 @@ blockquote
 		&:last-child
 			margin-bottom: 60px
 			border-bottom: none
+		+r($mob)
+			padding-bottom: 0
+			border-bottom: 0
+			margin-bottom: 0
 
 	.gallery__section
 		width: 50%
@@ -1223,6 +1305,11 @@ blockquote
 		img
 			display: block
 			max-width: 100%
+		+r($mob)
+			width: 100%
+			padding-bottom: 15px
+			border-bottom: 1px solid #e1e1e1
+			margin-bottom: 20px
 		a
 			text-decoration: none
 			color: #111
@@ -1232,9 +1319,16 @@ blockquote
 			float: left
 			padding-right: 24px
 			border-right: 1px solid #e1e1e1
+			+r($mob)
+				float: none
+				padding-right: 0
+				border-right: none
 		&.gallery__section_right
 			float: right
 			padding-left: 23px
+			+r($mob)
+				float: none
+				padding-left: 0
 	.gallery__section-title
 		display: inline-block
 		margin-top: 15px
@@ -1254,6 +1348,7 @@ blockquote
 
 .rss
 	font-size: 0
+	margin-bottom: 50px
 	.rss__item
 		display: inline-block
 		font-size: 14px
@@ -1278,6 +1373,9 @@ blockquote
 		&.rss__item_head
 			width: 50%
 			margin-bottom: 18px
+			+r($mob)
+				display: block
+				width: 100%
 	.rss__row
 		border-bottom: 1px solid #e1e1e1
 		margin-bottom: 18px
@@ -1285,6 +1383,9 @@ blockquote
 		display: inline-block
 		vertical-align: top
 		width: 50%
+		+r($mob)
+			display: block
+			width: 100%
 
 .is-mobilehidden
 	+r($mob)
