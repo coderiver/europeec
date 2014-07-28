@@ -1,5 +1,5 @@
 head.ready(function() {
-	
+
 
 
 
@@ -10,4 +10,10 @@ head.ready(function() {
 			$('.nav').toggleClass('is-active')
 		});
 	//}
+
+	$('.head__drop').click(function(event) {
+		$(this).toggleClass('is-active');
+		$('.dropdown').toggleClass('is-visible');
+		return false;
+	});
 });

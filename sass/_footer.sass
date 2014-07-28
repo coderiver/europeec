@@ -2,6 +2,8 @@
 	padding: 11px 0
 	border-top: 1px solid #DFDFDF
 	overflow: hidden
+	+r($mob)
+		display: none
 
 .footer
 	border-top: 1px solid #fff
@@ -120,6 +122,8 @@
 			margin-right: 100px
 		+r(910)
 			margin-top: 21px
+		+r($mob)
+			margin-right: 0
 		ul
 			list-style: none
 		li
@@ -133,12 +137,16 @@
 			font-weight: bold
 			@extend %arrow
 			margin-right: 23px
+			+r($mob)
+				margin: 0
 	.footer__cat
 		float: left
 		margin-right: 25px
 		margin-top: 8px
 		+r(910)
 			display: none
+		+r(1050)
+			margin-right: 15px
 		dt
 			margin-bottom: 16px
 			text-transform: uppercase

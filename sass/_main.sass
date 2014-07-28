@@ -10,9 +10,9 @@
 	height: 51px
 	text-align: center
 	font-size: 17px
-	font-style: italic
+	font-style: normal
 	line-height: 51px
-	font-family: Georgia,serif
+	font-family: Georgia, serif
 	color: #fff
 	margin-bottom: 11px
 	display: block
@@ -22,11 +22,17 @@
 		line-height: 1.1
 		padding: 15px
 		background-size: cover !important
-
 		b
 			display: block
+			margin-bottom: 3px
+	+r($mob)
+		font-size: 14px
+		b
+			font-size: 17px
 	b
+
 		font-weight: bold
+		font-style: italic
 		color: #FEDE36
 
 .head
@@ -36,6 +42,8 @@
 	margin-bottom: 19px
 	&.head_margin
 		padding-left: 50px
+		+r($mob)
+			padding-left: 0
 	&.head_searchresults
 		padding-left: 32px
 	h2
@@ -58,6 +66,69 @@
 	.head__morealt
 		i
 			+s(arrowbottom)
+	.head__drop
+		&.is-active
+			&:before
+				content: ""
+				display: block
+				position: absolute
+				top: -13px
+				bottom: -13px
+				left: -14px
+				right: 0
+				z-index: -1
+				background: #FFF
+				box-shadow: 0 0 8px rgba(0,0,1,.44)
+			&:after
+				content: ""
+				display: block
+				position: absolute
+				left: -14px
+				right: 0
+				bottom: -20px
+				height: 15px
+				background: #FFF
+				z-index: 101
+			i
+				opacity: 0
+.dropdown
+	display: none
+	position: absolute
+	z-index: 100
+	right: 0
+	top: 34px
+	+box
+	+clr
+	width: 522px
+	padding: 20px
+	background: #FFF
+	box-shadow: 0 0 8px rgba(0,0,1,.44)
+	+r($mob)
+		width: 290px
+	ul
+		float: left
+		width: 49%
+		margin-right: 2%
+		&:last-child
+			margin-right: 0
+		+r($mob)
+			display: block
+			float: none
+			width: 100%
+	li:not(:last-child)
+		margin-bottom: 15px
+	a
+		font-size: 14px
+		line-height: 1.1
+		color: #111
+		font-weight: bold
+		text-decoration: none
+		&:hover
+			color: #2a71df
+	&.is-visible
+		display: block
+
+
 .b
 	margin-bottom: 20px
 .news
@@ -68,11 +139,16 @@
 		padding-left: 50px
 		margin-bottom: 10px
 		margin-top: 20px
-	.news__more
-		margin-left: 50px
-		font-weight: bold
-		display: inline-block
-		@extend %arrow
+.news__more
+	margin-left: 50px
+	font-weight: bold
+	display: inline-block
+	@extend %arrow
+	+r($mob)
+		position: absolute
+		top: 4px
+		right: 0
+		margin-left: 0
 
 .ni
 	+clr
@@ -85,6 +161,9 @@
 	display: block
 	text-decoration: none
 	margin-bottom: 8px
+	+r($mob)
+		&:last-child
+			border-bottom: none
 	&:hover
 		color: #246DE2
 	&.is-important
@@ -117,6 +196,12 @@
 
 .banner
 	margin-bottom: 20px
+.banner-mobile
+	text-align: center
+	display: none
+	+r($mob)
+		display: block
+		margin: 0 -15px
 
 .vote
 	margin-bottom: 25px
@@ -190,7 +275,16 @@
 				float: none
 				width: auto
 				margin-bottom: 14px
-				margin-right: 15px
+				margin-right: 0
+			+r(1000)
+				float: left
+				margin-right: 20px
+				width: 64%
+			+r(600)
+				float: none
+				width: auto
+				margin-bottom: 14px
+				margin-right: 0
 	&.topitem_small
 		width: 46%
 		.topitem__pic
@@ -249,6 +343,8 @@
 		+r(850)
 			width: auto
 			float: none
+			padding-right: 0
+			border-right: none
 	&.topitem_right
 		float: right
 		+r(850)
@@ -294,6 +390,8 @@
 		position: relative
 		top: 1px
 		border-bottom: none
+		&:hover
+			color: #2a70df
 		&:before
 			position: absolute
 			top: 12px
@@ -301,7 +399,7 @@
 			border-right: 1px solid #DFDFDF
 			right: -1px
 			content: ' '
-		&.is-active,&:hover
+		&.is-active
 			color: #898B8E
 			//border-color: #D7D7D7
 			background: #fff
@@ -318,6 +416,8 @@
 	border-bottom: 1px dotted #C0C0C0
 	position: relative
 	padding-right: 35px
+	+r($mob)
+		padding-right: 0
 	.entry__pic
 		float: left
 		margin-right: 20px
@@ -336,21 +436,28 @@
 			font-size: 14px
 			line-height: 1.2
 			font-weight: normal
+			margin-top: 20px
 			strong
 				font-weight: normal
 				color: #111111
 				+cab
+			// +r($mob)
+			// 	font-size: 0
+			// 	strong
+			// 		font-size: 14px
 	.entry__label
 		display: inline-block
 		height: 17px
 		line-height: 17px
 		font-size: 12px
+		font-weight: normal
 		color: #2B2B2B
 		margin-bottom: 8px
 		padding: 0 6px
 		background: #E9E9E9
 		position: relative
 		text-decoration: none
+		cursor: default
 		&:before
 			position: absolute
 			right: -4px
@@ -361,6 +468,8 @@
 			background: #FEE392
 			&:before
 				+s(labelhot)
+	.entry__label + p
+		margin-top: 0
 	.entry__comments
 		position: absolute
 		top: 0
@@ -969,7 +1078,8 @@ blockquote
 		// width: 596px
 		width: 596px/945px*100%
 		max-width: 596px
-		padding: 9.5px 11px
+		height: 35px
+		padding: 0 11px
 		margin-right: 2px
 		font: normal 14px/1 Arial
 		color: #9d9d9d
@@ -1124,8 +1234,9 @@ blockquote
 		vertical-align: top
 		width: 50%
 
-
-
+.is-mobilehidden
+	+r($mob)
+		display: none
 
 
 
