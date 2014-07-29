@@ -459,14 +459,17 @@
 			line-height: 1.2
 			font-weight: normal
 			padding-top: 20px
-			strong
+			strong, b
 				font-weight: normal
 				color: #111111
 				+cab
-			// +r($mob)
-			// 	font-size: 0
-			// 	strong
-			// 		font-size: 14px
+			b
+				margin: 0 5px
+			+r($mob)
+				font-size: 0
+				strong
+					font-size: 14px
+					font-weight: normal
 	.entry__label
 		display: inline-block
 		height: 17px
@@ -527,6 +530,8 @@
 			font-weight: bold
 			color: #9A9A9A
 			border-color: #D7D7D7
+		&.is-mobilehidden
+			display: none
 
 	.pagi__prev,.pagi__next
 		display: inline-block
@@ -542,6 +547,9 @@
 		height: auto
 		width: auto
 		@extend %arrow
+		+r($mob)
+			margin-left: 0
+			float: right
 
 .post
 	margin-bottom: 10px
