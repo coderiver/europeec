@@ -440,38 +440,30 @@
 	.sw__btn
 		display: block
 		position: absolute
-		top: -48px
+		top: -62px
 		z-index: 5
-		&.sw__btn-right
-			+s(scrollright)
-			right: 0
-		&.sw__btn-left
-			+s(scrollleft)
-			left: 0
-	&:before, &:after
-		content: ""
-		display: block
 		width: 60px
 		height: 45px
-		position: absolute
-		top: -61px
-		right: 0
-		z-index: 4
-	&:before
-		left: 0
-		+gh(white, transparent)
-	&:after
-		right: 0
-		+gh(transparent, white)
+		line-height: 45px
+		i
+			display: inline-block
+			vertical-align: middle
+		&.sw__btn-right
+			+gh(rgba(255,255,255, 0), rgba(255,255,255, 1))
+			i
+				+s(scrollright)
+			right: 0
+			text-align: right
+		&.sw__btn-left
+			+gh(rgba(255,255,255, 1), rgba(255,255,255, 0))
+			i
+				+s(scrollleft)
+			left: 0
 	&.is-showleft
 		.sw__btn-right
 			display: none
-		&:after
-			display: none
 	&.is-showright
 		.sw__btn-left
-			display: none
-		&:before
 			display: none
 
 .entry

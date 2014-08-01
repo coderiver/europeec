@@ -327,16 +327,14 @@ body { padding: 0 20px; }
 
 .sw__btns { position: relative; display: none; }
 @media only screen and (max-width: 720px) { .sw__btns { display: block; } }
-.sw__btns .sw__btn { display: block; position: absolute; top: -48px; z-index: 5; }
-.sw__btns .sw__btn.sw__btn-right { background: url('../img/icons-sa3722b7682.png') 0 -1527px no-repeat; width: 16px; height: 16px; right: 0; }
-.sw__btns .sw__btn.sw__btn-left { background: url('../img/icons-sa3722b7682.png') 0 -943px no-repeat; width: 16px; height: 16px; left: 0; }
-.sw__btns:before, .sw__btns:after { content: ""; display: block; width: 60px; height: 45px; position: absolute; top: -61px; right: 0; z-index: 4; }
-.sw__btns:before { left: 0; background-image: -webkit-gradient(linear, 0% 50%, 100% 50%, color-stop(0%, #ffffff), color-stop(100%, transparent)); background-image: -webkit-linear-gradient(left, #ffffff, transparent); background-image: -moz-linear-gradient(left, #ffffff, transparent); background-image: -o-linear-gradient(left, #ffffff, transparent); background-image: linear-gradient(left, #ffffff, transparent); }
-.sw__btns:after { right: 0; background-image: -webkit-gradient(linear, 0% 50%, 100% 50%, color-stop(0%, transparent), color-stop(100%, #ffffff)); background-image: -webkit-linear-gradient(left, transparent, #ffffff); background-image: -moz-linear-gradient(left, transparent, #ffffff); background-image: -o-linear-gradient(left, transparent, #ffffff); background-image: linear-gradient(left, transparent, #ffffff); }
+.sw__btns .sw__btn { display: block; position: absolute; top: -62px; z-index: 5; width: 60px; height: 45px; line-height: 45px; }
+.sw__btns .sw__btn i { display: inline-block; vertical-align: middle; }
+.sw__btns .sw__btn.sw__btn-right { background-image: -webkit-gradient(linear, 0% 50%, 100% 50%, color-stop(0%, rgba(255, 255, 255, 0)), color-stop(100%, #ffffff)); background-image: -webkit-linear-gradient(left, rgba(255, 255, 255, 0), #ffffff); background-image: -moz-linear-gradient(left, rgba(255, 255, 255, 0), #ffffff); background-image: -o-linear-gradient(left, rgba(255, 255, 255, 0), #ffffff); background-image: linear-gradient(left, rgba(255, 255, 255, 0), #ffffff); right: 0; text-align: right; }
+.sw__btns .sw__btn.sw__btn-right i { background: url('../img/icons-sa3722b7682.png') 0 -1527px no-repeat; width: 16px; height: 16px; }
+.sw__btns .sw__btn.sw__btn-left { background-image: -webkit-gradient(linear, 0% 50%, 100% 50%, color-stop(0%, #ffffff), color-stop(100%, rgba(255, 255, 255, 0))); background-image: -webkit-linear-gradient(left, #ffffff, rgba(255, 255, 255, 0)); background-image: -moz-linear-gradient(left, #ffffff, rgba(255, 255, 255, 0)); background-image: -o-linear-gradient(left, #ffffff, rgba(255, 255, 255, 0)); background-image: linear-gradient(left, #ffffff, rgba(255, 255, 255, 0)); left: 0; }
+.sw__btns .sw__btn.sw__btn-left i { background: url('../img/icons-sa3722b7682.png') 0 -943px no-repeat; width: 16px; height: 16px; }
 .sw__btns.is-showleft .sw__btn-right { display: none; }
-.sw__btns.is-showleft:after { display: none; }
 .sw__btns.is-showright .sw__btn-left { display: none; }
-.sw__btns.is-showright:before { display: none; }
 
 .entry { *zoom: 1; padding-bottom: 15px; margin-bottom: 15px; border-bottom: 1px dotted silver; position: relative; padding-right: 35px; }
 .entry:after { content: " "; display: table; clear: both; }
