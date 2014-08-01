@@ -37,8 +37,10 @@
 			bottom: 14px
 			right: 0
 			margin: 0
-		+r(910)
-			display: none
+		+r($mob)
+			bottom: auto
+			top: -175px
+
 		i
 			+s(arrowtop)
 			margin-left: 7px
@@ -118,6 +120,7 @@
 				color: #246DE2
 	.footer__topics
 		clear: both
+		margin-top: 30px
 		+r(1160)
 			margin-right: 100px
 		+r(910)
@@ -140,9 +143,13 @@
 			+r($mob)
 				margin: 0
 	.footer__cat
-		float: left
-		margin-right: 25px
-		margin-top: 8px
+		// float: left
+		// margin-right: 25px
+		// margin-top: 8px
+		display: inline-block
+		vertical-align: top
+		width: 25%
+		margin: 8px 10px 10px 0
 		+r(910)
 			display: none
 		+r(1050)

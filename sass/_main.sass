@@ -513,6 +513,20 @@
 
 .pagi
 	margin-bottom: 20px
+	display: inline-block
+	+r($mob)
+		display: block
+	li
+		display: inline-block
+		margin-left: -3px
+		&.is-active
+			a
+				font-weight: bold
+				color: #9A9A9A
+				border-color: #D7D7D7
+		&.is-mobilehidden
+			+r($mob)
+				display: none
 	a
 		text-decoration: none
 		color: #0546ae
@@ -526,27 +540,25 @@
 		margin-right: 5px
 		&:hover
 			color: #246de2
-		&.is-active
-			font-weight: bold
-			color: #9A9A9A
-			border-color: #D7D7D7
-		&.is-mobilehidden
-			display: none
 
 	.pagi__prev,.pagi__next
 		display: inline-block
+		vertical-align: middle
 		border-style: none
 
 	.pagi__prev
-		+s(prev)
+		a
+			+s(prev)
 	.pagi__next
-		+s(next)
+		a
+			+s(next)
 	.pagi__more
-		margin-left: 32px
-		border-style: none
-		height: auto
-		width: auto
-		@extend %arrow
+		a
+			margin-left: 32px
+			border-style: none
+			height: auto
+			width: auto
+			@extend %arrow
 		+r($mob)
 			margin-left: 0
 			float: right
@@ -1262,6 +1274,8 @@ blockquote
 	.author-articles__name
 		font: bold 28px/1.1 Arial
 		color: #111
+		+r($mob)
+			font-size: 20px
 	.author-articles__about
 		font-size: 14px
 		color: #9a9a9a

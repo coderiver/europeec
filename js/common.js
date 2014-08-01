@@ -2,7 +2,6 @@ head.ready(function() {
 
 
 
-
 	// touch js
 	// uncomment on production
 	//if(head.touch){
@@ -16,4 +15,12 @@ head.ready(function() {
 		$('.dropdown').toggleClass('is-visible');
 		return false;
 	});
+
+	if(head.touch) {
+		$('.currency').click(function(event) {
+			event.preventDefault();
+			$(this).toggleClass('is-active');
+		});
+	};
+
 });
