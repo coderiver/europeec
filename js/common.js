@@ -23,4 +23,34 @@ head.ready(function() {
 		});
 	};
 
+	// scroll btns
+	$(".sw__btn-left").click(function () {
+		var leftPos = $('.sw').scrollLeft();
+		$(".sw").animate({scrollLeft: leftPos - 200}, 800);
+		return false;
+	});
+
+	$(".sw__btn-right").click(function () {
+		var leftPos = $('.sw').scrollLeft();
+		$(".sw").animate({scrollLeft: leftPos + 200}, 800);
+		return false;
+	});
+
+	$('.sw').scroll(function(){
+		var leftPos = $(this).scrollLeft();
+		if (leftPos==0){
+			$('.sw__btns').addClass('is-showright');
+		}
+		else{
+			$('.sw__btns').removeClass('is-showright');
+		};
+
+		if(leftPos+$(this).width() >480){
+			$('.sw__btns').addClass('is-showleft');
+		}
+		else{
+			$('.sw__btns').removeClass('is-showleft');
+		}
+	});
+
 });

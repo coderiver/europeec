@@ -394,6 +394,7 @@
 		list-style: none
 		border-bottom: 1px solid #DEDEDE
 		+clr
+		float: left
 	li
 		//float: left
 		display: inline-block
@@ -431,6 +432,48 @@
 			//margin-left: -1px
 			&:before
 				display: none
+.sw__btns
+	position: relative
+	display: none
+	+r($mob)
+		display: block
+	.sw__btn
+		display: block
+		position: absolute
+		top: -48px
+		z-index: 5
+		&.sw__btn-right
+			+s(scrollright)
+			right: 0
+		&.sw__btn-left
+			+s(scrollleft)
+			left: 0
+	&:before, &:after
+		content: ""
+		display: block
+		width: 60px
+		height: 45px
+		position: absolute
+		top: -61px
+		right: 0
+		z-index: 4
+	&:before
+		left: 0
+		+gh(white, transparent)
+	&:after
+		right: 0
+		+gh(transparent, white)
+	&.is-showleft
+		.sw__btn-right
+			display: none
+		&:after
+			display: none
+	&.is-showright
+		.sw__btn-left
+			display: none
+		&:before
+			display: none
+
 .entry
 	+clr
 	padding-bottom: 15px
@@ -560,8 +603,9 @@
 			width: auto
 			@extend %arrow
 		+r($mob)
-			margin-left: 0
 			float: right
+			a
+				margin-left: 0
 
 .post
 	margin-bottom: 10px
@@ -964,8 +1008,6 @@ blockquote
 	display: block
 	color: #8c8c8c
 	font-style: italic
-	+r($mob)
-		margin-bottom: 35px
 
 .article__slideshow
 	width: 560px
@@ -978,6 +1020,10 @@ blockquote
 		margin-top: 0
 	+r($mob)
 		width: 100%
+	.article__img-author
+		+r($mob)
+			padding-bottom: 35px
+
 .article__slide
 	float: none
 	width: 100%
@@ -1271,6 +1317,8 @@ blockquote
 			display: block
 	.author-articles__content
 		margin-left: 170px
+		+r($mob)
+			margin-left: 160px
 	.author-articles__name
 		font: bold 28px/1.1 Arial
 		color: #111
