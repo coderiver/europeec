@@ -96,6 +96,7 @@
 		bottom: -31px
 		right: 0
 		top: auto
+		z-index: 10
 	.search__input
 		border-style: none
 		box-shadow: none
@@ -130,7 +131,7 @@
 	.currency__current
 		display: inline-block
 		position: relative
-		z-index: 20
+		z-index: 111
 	.currency__name
 		display: inline-block
 		font-weight: bold
@@ -162,7 +163,7 @@
 		padding-top: 41px
 		background: #fff
 		display: none
-		z-index: 19
+		z-index: 110
 		a
 			display: block
 			height: 41px
@@ -176,6 +177,9 @@
 			text-align: left
 			&:hover
 				color: #2A70DF
+				+r($mob)
+					color: #FFF
+					background: #2A70DF
 			&:active
 				background: #2A70DF
 				color: #fff
@@ -195,15 +199,15 @@
 	line-height: 45px
 	padding: 0 14px
 	left: 0
-	z-index: 15
+	z-index: 103
 	.is-active &
 		box-shadow: 0 0 8px rgba(0,0,1,.44)
 		background: #fff
 		&:before
 			content: ' '
 			width: 100%
-			bottom: -5px
-			height: 10px
+			bottom: -10px
+			height: 15px
 			background: #fff
 			position: absolute
 			left: 0
@@ -239,7 +243,7 @@
 			position: absolute
 			top: 45px
 			background: #fff
-			z-index: 14
+			z-index: 102
 			padding-top: 16px
 			padding-bottom: 5px
 	li
@@ -247,7 +251,7 @@
 		+r(850)
 			display: block
 	a
-		color: #000
+		color: #2a2e34
 		text-decoration: none
 		margin: 0 13px
 		position: relative
@@ -299,32 +303,74 @@
 	border-bottom: 1px solid #D9D9D9
 	position: relative
 	margin-bottom: 10px
-	ul
-		list-style: none
-	li
-		display: inline-block
 	a
 		color: #2F2F2F
 		text-decoration: none
 		margin: 0 14px
 		&:hover
 			color: #246de2
+	ul
+		list-style: none
+	li
+		display: inline-block
 		&.is-active
-			position: relative
-			font-weight: bold
-			color: #181818
-			&:after
-				content: ""
-				display: block
-				height: 3px
-				width: 100%
-				background: #404040
-				position: absolute
-				bottom: -15px
-				left: 0
+			a
+				position: relative
+				font-weight: bold
+				color: #181818
+				&:after
+					content: ""
+					display: block
+					height: 3px
+					width: 100%
+					background: #404040
+					position: absolute
+					bottom: -15px
+					left: 0
 	+r(850)
 		display: none
 
+.current-section
+	display: none
+	+b
+	text-transform: uppercase
+	font-size: 12px
+	border-bottom: 1px solid #D9D9D9
+	padding: 6px 0 15px
+	text-decoration: none
+	color: #2A2E34
+	text-align: center
+	a
+		color: #2a2e34
+		text-decoration: none
+	h2, h3
+		display: inline-block
+		font-size: 12px
+		font-weight: normal
+	span, a, h2, h3, strong
+		position: relative
+		&:before
+			content: ""
+			display: block
+			background: #ffe58a
+			position: absolute
+			top: -3px
+			bottom: -3px
+			left: -6px
+			right: -6px
+			z-index: -1
+		&:after
+			content: ""
+			display: block
+			border: 6px solid transparent
+			border-top-color: #FFE58A
+			position: absolute
+			top: 19px
+			left: 50%
+			margin-left: -6px
+			z-index: -2
+	+r($mob)
+		display: block
 
 
 

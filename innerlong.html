@@ -78,12 +78,14 @@
 			<li><a href="#">Подрубрика 2</a></li>
 			<li><a href="#">Подрубрика 3</a></li>
 			<li><a href="#">Подрубрика 4</a></li>
-			<li><a class="is-active" href="#">Подрубрика 5</a></li>
+			<li class="is-active"><a href="#">Подрубрика 5</a></li>
 			<li><a href="#">Подрубрика 6</a></li>
 			<li><a href="#">Подрубрика 7</a></li>
 		</ul>
 	</div>
 	<!-- end subnav -->
+
+	<div class="current-section"><span>Бизнес и финансы</span></div>
 
 
 
@@ -101,7 +103,7 @@
 				<!-- begin article  -->
 				<article class="article">
 					<header class="article__header">
-					<div class="article__header-right"><div class="ad"></div></div>
+					<div class="article__header-right"><div class="ad is-hidden"></div></div>
 						<h1>Пентагон обсудит с Кабмином поддержку оборонной сферы – Пайетт</h1>
 						<span class="article__author">Евгений Макаренко,</span>
 						<span class="article__date">Пятница, 12 июня 2014, 19:48</span>
@@ -153,7 +155,7 @@
 							<div class=" article__slideshow">
 								<div class="cycle-slideshow"
 										data-cycle-fx="scrollHorz"
-										data-cycle-timeout="4000"
+										data-cycle-timeout="0"
 										data-cycle-slides="> .article__slide"
 										data-cycle-prev=".article__prev"
 										data-cycle-next=".article__next">
@@ -205,7 +207,7 @@
 							</div>
 							<div class="social-btns"><img src="img/socialbtns.png" alt=""></div>
 						</footer>
-						<div class="smbanner"><img src="img/smbanner.jpg" alt=""></div>
+						<div class="smbanner is-mobilehidden"><img src="img/smbanner.jpg" alt=""></div>
 					</div>
 				</article>
 				<!-- end article -->
@@ -417,7 +419,7 @@
 
 				<!-- begin b  -->
 				<div class="b">
-					<div class="head">
+					<div class="head head_author">
 						<h2>Авторское мнение</h2>
 					</div>
 					<div class="interviews">
@@ -439,12 +441,12 @@
 				</div>
 				<!-- end b -->
 
-				<div class="b banner">
+				<div class="b banner is-mobilehidden">
 					<img src="img/dbanner2.jpg" alt="">
 				</div>
 
 				<!-- end b -->
-				<div class="b">
+				<div class="b is-mobilehidden">
 					<div class="head">
 						<h2>Актуально</h2>
 					</div>
@@ -459,11 +461,11 @@
 				</div>
 				<!-- end b -->
 
-				<div class="banner">
+				<div class="banner is-mobilehidden">
 					<img src="img/banner.png" alt="">
 				</div>
 
-				<div class="b banner">
+				<div class="b banner is-mobilehidden">
 					<img src="img/dbanner.jpg" alt="">
 				</div>
 			</div>
@@ -484,6 +486,11 @@
 		<img src="img/fbanner.jpg" alt="">
 	</div>
 	<!-- end fbanner -->
+	<!-- begin mobile banner -->
+	<div class="banner-mobile">
+		<img src="img/bannermobile.jpg" alt="">
+	</div>
+	<!-- end mobile banner -->
 	<!-- begin footer  -->
 	<div class="footer">
 		<!-- begin footer__top  -->
