@@ -53,4 +53,44 @@ head.ready(function() {
 		}
 	});
 
+	//gallery popup
+	// $('.article__slideshow img').click(function() {
+	// 	if ( $(window).width() > 700 ) {
+	// 		$('.popup').fadeIn(200);
+	// 		$('body').addClass('noscroll');
+	// 	};
+	// });
+
+	// $('.popup__gallery-close').click(function() {
+	// 	$('.popup').fadeOut(200);
+	// 	$('body').removeClass('noscroll');
+	// });
+
+	$(".fancybox").fancybox({
+		// afterLoad: function() {
+		// 	$(this).title = $(this).title + '<span class="fancy-author">' + $(this).attr('data-autor') + '</span>';
+		// },
+		 beforeLoad: function() {
+		 	var caption	= $(this.element).attr('caption'),
+		 		 author = $(this.element).attr('author');
+
+			this.title = caption + '<i>' + author + '</i>';
+			if ( author == undefined ) {
+				author = '';
+			};
+		},
+		openEffect : 'fade',
+		closeEffect : 'fade',
+		prevEffect : 'elastic',
+		nextEffect : 'elastic',
+		padding : [20, 35, 20, 35],
+		helpers : {
+			  title : { type: 'inside' },
+			overlay : { css : {'background' : 'rgba(0, 0, 0, 0.8)'} }
+			}
+
+	})
+
 });
+
+
