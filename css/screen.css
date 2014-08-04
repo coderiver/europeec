@@ -489,6 +489,7 @@ body { padding: 0 20px; }
 .fotos .fotos__pagi span:hover { background: #2a70df; }
 
 .quote { margin: 19px 0 39px; }
+.quote a { text-decoration: none; color: #4d4d4d; }
 
 blockquote { display: block; padding: 15px 30px; margin-bottom: 25px; position: relative; font-style: italic; color: #4d4d4d; line-height: 1.42; }
 blockquote:before { content: ""; display: block; background: url('../img/icons-s5b6ce8c46d.png') 0 -649px no-repeat; width: 25px; height: 20px; position: absolute; top: 0; left: 0; }
@@ -694,6 +695,15 @@ blockquote cite { color: #111111; position: absolute; bottom: -15px; left: 30px;
 .gallery .gallery__section-title span { color: #9b9b9b; font-family: "regular", Arial, sans-serif; }
 a:hover .gallery .gallery__section-title span { color: #9b9b9b; }
 .gallery .gallery__section-title h3 { font-size: 12px; line-height: 1.417; font-weight: bold; }
+
+.ads { border: 1px solid #acadb1; padding: 12px 18px 20px 22px; text-align: center; }
+.ads a { display: block; }
+.ads .ads__title { margin-bottom: 18px; font-weight: normal; color: #b5b5b5; text-transform: uppercase; font-size: 11px; }
+.ads .ads__title a { text-decoration: none; color: #b5b5b5; }
+.ads .ads__item { text-decoration: none; color: #606060; }
+.ads .ads__hr { border-top: 1px solid #e3e3e3; margin-bottom: 18px; margin-top: 18px; }
+.ads .ads__img { display: block; margin-bottom: 9px; }
+.ads .ads__text { font-size: 12px; color: #6f6f6f; }
 
 .rss { font-size: 0; margin-bottom: 50px; }
 .rss .rss__item { display: inline-block; font-size: 14px; font-family: "xtra", Arial, sans-serif; color: #212121; text-decoration: none; padding-left: 25px; margin-bottom: 15px; position: relative; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; }
