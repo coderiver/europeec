@@ -88,6 +88,9 @@ a { color: #0e4aab; }
 @media only screen and (max-width: 850px) { .nav ul { display: none; box-shadow: 0 0 8px rgba(0, 0, 1, 0.44); font-size: 14px; width: 177px; position: absolute; top: 45px; background: white; z-index: 102; padding-top: 16px; padding-bottom: 5px; } }
 .nav li { display: inline-block; }
 @media only screen and (max-width: 850px) { .nav li { display: block; } }
+.nav li.is-active a:before { content: ""; display: block; background: #ffe58a; position: absolute; top: -3px; bottom: -3px; left: -6px; right: -6px; z-index: -1; }
+.nav li.is-active a:after { content: ""; display: block; border: 6px solid transparent; border-top-color: #ffe58a; position: absolute; top: 19px; left: 50%; margin-left: -6px; z-index: -2; }
+@media only screen and (max-width: 850px) { .nav li.is-active a { display: none; } }
 .nav a { color: #2a2e34; text-decoration: none; margin: 0 13px; position: relative; }
 .nav a:hover { color: #2a70df; }
 .nav a.is-active:before { content: ""; display: block; background: #ffe58a; position: absolute; top: -3px; bottom: -3px; left: -6px; right: -6px; z-index: -1; }
