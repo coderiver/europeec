@@ -498,7 +498,7 @@ blockquote { display: block; padding: 15px 30px; margin-bottom: 25px; position: 
 blockquote:before { content: ""; display: block; background: url('../img/icons-s5b6ce8c46d.png') 0 -649px no-repeat; width: 25px; height: 20px; position: absolute; top: 0; left: 0; }
 blockquote:after { content: ""; display: block; background: url('../img/icons-s5b6ce8c46d.png') 0 -619px no-repeat; width: 26px; height: 20px; position: absolute; bottom: 0; right: 0; }
 .article blockquote { font-size: 14px; color: #7c7c7c; line-height: 1.714; margin: 20px 0 25px; }
-blockquote cite { color: #111111; position: absolute; bottom: -15px; left: 30px; font-weight: bold; }
+blockquote cite { color: #111111; position: absolute; bottom: -25px; left: 30px; font-weight: bold; }
 
 .article { margin-bottom: 30px; color: #565656; line-height: 1.5; font-size: 14px; }
 .article h1 { font-family: "Cambria", sans-serif; font-weight: bold; font-size: 28px; color: #181818; line-height: 1.1; margin-bottom: 25px; }
