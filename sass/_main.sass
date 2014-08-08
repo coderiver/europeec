@@ -1000,6 +1000,10 @@ blockquote
 		float: none
 		width: 560px
 		margin: 30px auto
+		+r(960)
+			width: 100%
+		+r(820)
+			width: 560px
 		+r($mob)
 			width: 100%
 	&.article__img_right
@@ -1043,10 +1047,20 @@ blockquote
 	margin: 30px auto
 	position: relative
 	clear: both
-	.gallery &
-		margin-top: 0
+	+r(960)
+		width: 100%
+	+r(820)
+		width: 560px
 	+r($mob)
 		width: 100%
+	.gallery &
+		margin-top: 0
+		+r(1200)
+			width: 100%
+		+r(1000)
+			width: 560px
+		+r($mob)
+			width: 100%
 	.article__img-author
 		+r($mob)
 			padding-bottom: 35px
