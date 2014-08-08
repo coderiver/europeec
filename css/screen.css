@@ -467,6 +467,7 @@ body { padding: 0 20px; }
 .post .post__title:hover { color: #2a71df; }
 
 .editors { position: relative; padding: 18px 16px 16px 16px; background: #f6f6f6; border: 1px solid #d0d0d0; }
+.editors .editors__slider { overflow: hidden; }
 .editors .editors__icon { position: absolute; top: -9px; left: 17px; background: url('../img/icons-s5b6ce8c46d.png') 0 -679px no-repeat; width: 19px; height: 22px; }
 .editors .editors__title { font-size: 16px; font-family: "xtra", Arial, sans-serif; color: #3e4046; margin-bottom: 15px; }
 .editors .editors__slide { width: 100%; }
