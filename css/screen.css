@@ -401,7 +401,7 @@ body { padding: 0 20px; }
 .smbanner { margin-bottom: 20px; width: 100%; overflow: hidden; background: #f2f2f2; }
 .smbanner img { display: block; margin: auto; }
 
-.sw { font-size: 14px; color: #111111; margin-bottom: 17px; overflow: hidden; white-space: nowrap; overflow: auto; font-family: "xtra", Arial, sans-serif; font-size: 0; }
+.sw { font-size: 14px; color: #111111; margin-bottom: 17px; overflow: hidden; white-space: nowrap; font-family: "xtra", Arial, sans-serif; font-size: 0; }
 .sw ul { list-style: none; border-bottom: 1px solid #dedede; *zoom: 1; float: left; }
 .sw ul:after { content: " "; display: table; clear: both; }
 .sw li { display: inline-block; }

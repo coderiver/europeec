@@ -43,8 +43,8 @@ head.ready(function() {
 		else{
 			$('.sw__btns').removeClass('is-showright');
 		};
-
-		if(leftPos+$(this).width() >480){
+		// alert($(this).width()+'---'+leftPos);
+		if(leftPos+$(this).width() >579){
 			$('.sw__btns').addClass('is-showleft');
 		}
 		else{
