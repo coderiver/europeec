@@ -71,7 +71,7 @@ head.ready(function() {
 		padding : [20, 35, 20, 35],
 		helpers : {
 			  title : { type: 'inside' },
-			overlay : { css : {'background' : 'rgba(255, 255, 255, 0.9)'} }
+			overlay : { css : {'background' : 'rgba(255, 255, 255, 0.9)'}, locked: false }
 			}
 
 	})
