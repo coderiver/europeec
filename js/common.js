@@ -74,7 +74,18 @@ head.ready(function() {
 			overlay : { css : {'background' : 'rgba(255, 255, 255, 0.9)'}, locked: false }
 			}
 
-	})
+	});
+
+	$(".js-cycle").each(function(){
+		var heights = $(this).find(".js-cycle-slide").map(function(){
+    	    return $(this).height();
+    	}).get();
+    	maxHeight = Math.max.apply(null, heights);
+    	$(this).css({
+    		height: maxHeight
+    	});
+	});
+	
 
 });
 
