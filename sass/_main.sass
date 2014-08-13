@@ -304,6 +304,7 @@
 		a
 			color: #181818
 			text-decoration: none
+			+prevent-text
 			&:hover
 				color: #2A71DF
 	&.topitem_big
@@ -789,13 +790,7 @@ blockquote
 		position: absolute
 		top: 0
 		left: 0
-	&:after
-		content: ""
-		display: block
-		+s(quotea)
-		position: absolute
-		bottom: 0
-		right: 0
+	
 	.article &
 		// margin-bottom:
 		font-size: 14px
@@ -804,13 +799,22 @@ blockquote
 		margin: 20px 0 25px
 	cite
 		color: #111
-		position: absolute
-		bottom: -25px
-		left: 30px
+		// position: absolute
+		// bottom: -25px
+		display: block
+		margin-top: 13px 
+		left: 0px
 		font-weight: bold
 		+prevent-text
 		padding-right: 20px
-
+		position: relative
+		&:after
+			content: ""
+			display: block
+			+s(quotea)
+			position: absolute
+			top: -30px 
+			right: -20px
 .article
 	margin-bottom: 30px
 	color: #565656
