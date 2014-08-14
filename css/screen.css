@@ -368,10 +368,14 @@ body { padding: 0 20px; }
 .topitem .topitem__title a { color: #181818; text-decoration: none; -ms-word-break: break-all; word-break: break-all; word-break: break-word; -webkit-hyphens: auto; -moz-hyphens: auto; hyphens: auto; }
 .topitem .topitem__title a:hover { color: #2a71df; }
 .topitem.topitem_big { border-bottom: 1px solid #e1e1e1; padding-bottom: 23px; margin-bottom: 23px; }
-.topitem.topitem_big .topitem__pic { float: left; margin-right: 20px; width: 64%; }
+.topitem.topitem_big .topitem__pic { float: left; width: 64%; }
 @media only screen and (max-width: 1150px) { .topitem.topitem_big .topitem__pic { float: none; width: auto; margin-bottom: 14px; margin-right: 0; } }
 @media only screen and (max-width: 1000px) { .topitem.topitem_big .topitem__pic { float: left; margin-right: 20px; width: 64%; } }
 @media only screen and (max-width: 600px) { .topitem.topitem_big .topitem__pic { float: none; width: auto; margin-bottom: 14px; margin-right: 0; } }
+.topitem.topitem_big .topitem__content { float: right; width: 32%; }
+@media only screen and (max-width: 1150px) { .topitem.topitem_big .topitem__content { float: none; width: auto; } }
+@media only screen and (max-width: 1000px) { .topitem.topitem_big .topitem__content { float: right; width: 32%; } }
+@media only screen and (max-width: 600px) { .topitem.topitem_big .topitem__content { float: none; width: auto; } }
 .topitem.topitem_small { width: 46%; padding-bottom: 25px; }
 .topitem.topitem_small .topitem__pic { margin-bottom: 19px; }
 @media only screen and (max-width: 850px) { .topitem.topitem_small .topitem__pic { float: left; width: 50%; margin-right: 20px; } }
