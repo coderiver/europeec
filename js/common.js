@@ -1,6 +1,20 @@
 head.ready(function() {
+	$(window).load(function() {
+		$('.article__slideshow .js-cycle').css('overflow','hidden').cycle({
+			fx: 'scrollHorz',
+		    speed: 600,
+		    timeout: 0,
+		    slides:"> .article__slide",
+		    prev: '.article__prev',
+		    next: '.article__next',
+		    manualSpeed: 600,
+		    autoheight: "container"
+		});
 
 
+
+	});
+	
 	// touch js
 	// uncomment on production
 	//if(head.touch){
