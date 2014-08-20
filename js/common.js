@@ -8,7 +8,7 @@ head.ready(function() {
 		    prev: '.article__prev',
 		    next: '.article__next',
 		    manualSpeed: 600,
-		    autoheight: "container"
+		    autoHeight: "container"
 		});
 
 
