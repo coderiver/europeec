@@ -90,15 +90,15 @@ head.ready(function() {
 
 	});
 
-	$(".js-cycle").each(function(){
-		var heights = $(this).find(".js-cycle-slide").map(function(){
-    	    return $(this).height();
-    	}).get();
-    	maxHeight = Math.max.apply(null, heights);
-    	$(this).css({
-    		height: maxHeight
-    	});
-	});
+	// $(".js-cycle").each(function(){
+	// 	var heights = $(this).find(".js-cycle-slide").map(function(){
+ //    	    return $(this).height();
+ //    	}).get();
+ //    	maxHeight = Math.max.apply(null, heights);
+ //    	$(this).css({
+ //    		height: maxHeight
+ //    	});
+	// });
 	
 
 });

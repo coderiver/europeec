@@ -551,7 +551,7 @@ blockquote cite:after { content: ""; display: block; background: url('../img/ico
 @media only screen and (max-width: 720px) { .article .important__icon { display: none; } }
 
 .article__img { float: left; width: 425px; margin: 0 25px 25px 0; line-height: 1.5; font-size: 12px; }
-.article__img img { display: block; max-width: 100%; margin-bottom: 15px; }
+.article__img img { display: block; max-width: 100%; margin-bottom: 15px; margin-left: auto; margin-right: auto; }
 .article__img.article__img_left { margin-left: -55px; }
 @media only screen and (max-width: 720px) { .article__img.article__img_left { margin-left: 0; } }
 .article__img.article__img_center { float: none; width: 560px; margin: 30px auto; }
