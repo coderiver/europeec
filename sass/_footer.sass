@@ -178,9 +178,12 @@
 	a
 		display: inline-block
 		margin-right: 29px
-	@each $s in fb,tw,rss
+	@each $s in fb,tw,rss,gp
 		.socials__#{$s}
 			+s(#{$s})
 			&:hover
 				+sp(#{$s}h)
+	.socials__gp
+		position: relative
+		top: 3px 
 
