@@ -707,7 +707,7 @@ blockquote cite:after { content: ""; display: block; background: url('../img/ico
 .gallery .gallery__section.gallery__section_right { float: right; padding-left: 23px; }
 @media only screen and (max-width: 720px) { .gallery .gallery__section.gallery__section_right { float: none; padding-left: 0; } }
 .gallery .gallery__section-title { display: inline-block; margin-top: 15px; }
-.gallery .gallery__section-title h2 { display: inline-block; font-size: 14px; font-family: "xtra", Arial, sans-serif; }
+.gallery .gallery__section-title h2 { display: inline-block; font-size: 14px; font-weight: normal; font-family: "xtra", Arial, sans-serif; }
 .gallery .gallery__section-title span { color: #9b9b9b; font-family: "regular", Arial, sans-serif; }
 a:hover .gallery .gallery__section-title span { color: #9b9b9b; }
 .gallery .gallery__section-title h3 { font-size: 12px; line-height: 1.417; font-weight: bold; }
