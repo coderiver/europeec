@@ -588,8 +588,8 @@ blockquote cite:after { content: ""; display: block; background: url('../img/ico
 .article__slidecount { position: absolute; font-size: 18px; color: #181818; bottom: 0; right: 0; background: white; }
 @media only screen and (max-width: 720px) { .article__slidecount { left: 50%; bottom: -2px; margin-left: -17px; } }
 
-.article__prev, .article__next { display: block; width: 46px; height: 26px; background: white; text-align: center; position: absolute; bottom: 50%; margin-bottom: 14px; z-index: 100; }
-.article__prev i, .article__next i { display: inline-block; }
+.article__prev, .article__next { display: block; width: 46px; height: 26px; background: white; text-align: center; position: absolute; top: 0; height: 100%; z-index: 100; }
+.article__prev i, .article__next i { display: inline-block; position: absolute; bottom: 50%; margin-bottom: 14px; left: 14px; }
 @media only screen and (max-width: 720px) { .article__prev, .article__next { bottom: 0; margin-bottom: 0; background: transparent; } }
 
 .article__prev { left: -46px; }

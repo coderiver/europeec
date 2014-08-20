@@ -1125,11 +1125,25 @@ blockquote
 	background: #FFF
 	text-align: center
 	position: absolute
-	bottom: 50%
-	margin-bottom: 14px
+	// bottom: 50%
+	// margin-bottom: 14px
+	top: 0
+	height: 100%  
 	z-index: 100
+	&:before
+		// height: 1000px 
+		// width: 100%
+		// top: -400px
+		// background: red
+		// content: ' '   
+		// position: absolute
+		// left: 0 
 	i
 		display: inline-block
+		position: absolute
+		bottom: 50%
+		margin-bottom: 14px
+		left: 14px 
 	+r($mob)
 		bottom: 0
 		margin-bottom: 0
