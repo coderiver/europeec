@@ -740,8 +740,9 @@ a:hover .gallery .gallery__section-title span { color: #9b9b9b; }
 .error-page div { padding: 15px 0 0 110px; font-size: 12px; }
 .error-page div span { font-size: 18px; }
 
-@media print { .header, .footer, .nav, .topbanner, .fbanner, .l-col3, .article__slideshow { display: none; }
+@media print { .header, .footer, .nav, .topbanner, .fbanner, .l-col3, .article__slideshow, .nav__sub { display: none; }
   body { margin: 0.2in 0.55in; padding: 0; }
   body .l .l-col2 { float: none; width: 100%; padding: 0; margin: 0; }
   body .l .l-col2 .l-col2inner { margin: 0 !important; padding: 0 !important; float: none !important; width: auto !important; }
-  .article a[href]:after { content: " (" attr(href) ") "; font-size: 90%; color: #777777; } }
+  .article a[href]:after { content: " (" attr(href) ") "; font-size: 90%; color: #777777; }
+  .article + .head, .article + .head + .read-more { display: none; } }

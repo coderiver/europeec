@@ -1,5 +1,5 @@
 @media print
-	.header,.footer,.nav,.topbanner,.fbanner,.l-col3,.article__slideshow
+	.header,.footer,.nav,.topbanner,.fbanner,.l-col3,.article__slideshow,.nav__sub
 		display: none
 	body
 		margin: .2in .55in
@@ -19,3 +19,5 @@
 		content: " (" attr(href) ") "
 		font-size: 90%
 		color: #777 
+	.article+ .head,.article+.head+.read-more
+		display: none
