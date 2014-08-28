@@ -10,6 +10,7 @@
 	box-shadow:  0 -3px 0 #E0E0E0, inset 0 1px 0 #E0E0E0
 	padding: 33px 0 42px 0
 	position: relative
+	margin-top: 15px 
 	+r(910)
 		padding: 28px 25px 42px
 		box-shadow: none
@@ -152,6 +153,8 @@
 		margin: 8px 10px 10px 0
 		+r(910)
 			display: none
+			&.is-active
+				display: block
 		+r(1050)
 			margin-right: 15px
 		dt
@@ -178,7 +181,7 @@
 	a
 		display: inline-block
 		margin-right: 29px
-	@each $s in fb,tw,rss,gp
+	@each $s in fb,twitter,rss,gp
 		.socials__#{$s}
 			+s(#{$s})
 			&:hover

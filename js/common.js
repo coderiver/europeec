@@ -1,4 +1,16 @@
 head.ready(function() {
+	$('.js-togglesitemap').click(function(event) {
+		event.preventDefault();
+		$('.footer__cat').toggleClass('is-active');
+	});
+	$(document).click(function(event) { 
+	    if(!$(event.target).closest('.dropdown').length) {
+	        if($('.dropdown').is(":visible")) {
+	            $('.dropdown').removeClass('is-visible');
+	            $('.head__more').removeClass('is-active');
+	        }
+	    }        
+	})
 	$(window).load(function() {
 		$('.article__slideshow .js-cycle').css('overflow','hidden').cycle({
 			fx: 'scrollHorz',
