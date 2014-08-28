@@ -606,10 +606,12 @@ blockquote cite:after { content: ""; display: block; background: url('../img/ico
 .article__prev { left: -46px; }
 .article__prev i { background: url('../img/icons-s88d3b85f36.png') 0 -1462px no-repeat; width: 17px; height: 26px; }
 @media only screen and (max-width: 720px) { .article__prev { left: 31%; } }
+@media only screen and (max-width: 500px) { .article__prev { left: -10px; } }
 
 .article__next { right: -46px; }
 .article__next i { background: url('../img/icons-s88d3b85f36.png') 0 -1498px no-repeat; width: 17px; height: 26px; }
 @media only screen and (max-width: 720px) { .article__next { right: 31%; } }
+@media only screen and (max-width: 500px) { .article__next { right: -10px; } }
 
 .comments { color: #3f3f3f; max-width: 650px; margin: auto; margin-bottom: 20px; }
 .comments .head h2 { display: inline-block; }
