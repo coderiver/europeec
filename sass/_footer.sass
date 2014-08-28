@@ -51,6 +51,12 @@
 		position: relative
 		+r(910)
 			margin: 0
+		&.is-active
+			+r(910)
+				border-top: 1px solid #fff
+				box-shadow:  0 -3px 0 #E0E0E0, inset 0 1px 0 #E0E0E0
+				margin-top: 15px 
+				padding-top: 5px 
 	.footer__top
 		margin-bottom: 25px
 		+r(910)
@@ -119,6 +125,8 @@
 			color: #111111
 			&:hover
 				color: #246DE2
+			&.js-togglesitemap
+				@extend %arrow
 	.footer__topics
 		clear: both
 		margin-top: 30px
@@ -155,8 +163,14 @@
 			display: none
 			&.is-active
 				display: block
+				&:first-child
+					background: red 
+					border-top: 1px solid #fff
+					box-shadow:  0 -3px 0 #E0E0E0, inset 0 1px 0 #E0E0E0
 		+r(1050)
 			margin-right: 15px
+		&:first-child
+			background: green 
 		dt
 			margin-bottom: 16px
 			text-transform: uppercase

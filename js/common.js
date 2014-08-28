@@ -1,7 +1,7 @@
 head.ready(function() {
 	$('.js-togglesitemap').click(function(event) {
 		event.preventDefault();
-		$('.footer__cat').toggleClass('is-active');
+		$('.footer__cat,.footer__right').toggleClass('is-active');
 	});
 	$(document).click(function(event) { 
 	    if(!$(event.target).closest('.dropdown').length) {
