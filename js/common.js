@@ -11,7 +11,7 @@ head.ready(function() {
 	        }
 	    }        
 	})
-	$(window).load(function() {
+	// $(window).load(function() {
 		$('.article__slideshow .js-cycle').css('overflow','hidden').cycle({
 			fx: 'scrollHorz',
 		    speed: 600,
@@ -20,8 +20,9 @@ head.ready(function() {
 		    prev: '.article__prev',
 		    next: '.article__next',
 		    manualSpeed: 600,
-		    autoHeight: "container"
-		});
+		    autoHeight: "container",
+		    loader: 'wait'
+		// });
 
 
 
