@@ -165,7 +165,7 @@ a { color: #0e4aab; }
 .footer .footer__topics a { font-size: 14px; font-weight: bold; margin-right: 23px; }
 @media only screen and (max-width: 720px) { .footer .footer__topics a { margin: 0; } }
 .footer .footer__cat { display: inline-block; vertical-align: top; width: 25%; margin: 8px 10px 10px 0; }
-@media only screen and (max-width: 910px) { .footer .footer__cat { display: none; }
+@media only screen and (max-width: 910px) { .footer .footer__cat { display: none; width: auto; }
   .footer .footer__cat.is-active { display: block; }
   .footer .footer__cat.is-active:first-child { background: red; border-top: 1px solid white; box-shadow: 0 -3px 0 #e0e0e0, inset 0 1px 0 #e0e0e0; } }
 @media only screen and (max-width: 1050px) { .footer .footer__cat { margin-right: 15px; } }
