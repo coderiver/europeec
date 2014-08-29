@@ -306,7 +306,7 @@ body { padding: 0 20px; }
 .head.head_author h2 { color: #3a3d42; }
 .head.head_searchresults { padding-left: 32px; }
 @media only screen and (max-width: 720px) { .head.head_searchresults { padding-left: 0; } }
-.head h2 { font-weight: normal; font-family: "xtra", Arial, sans-serif; font-size: 16px; color: #919295; }
+.head h2 { font-weight: normal; font-family: "xtra", Arial, sans-serif; font-size: 16px; color: #919295; font-family: "Arial Black", sans-serif; }
 .gallery .head h2 span { color: #252525; font-family: Arial; font-weight: bold; margin-left: 4px; }
 .head .head__more { position: absolute; right: 0; top: 5px; text-decoration: none; }
 .head .head__morealt i { background: url('../img/icons-s88d3b85f36.png') 0 -1197px no-repeat; width: 7px; height: 7px; }
