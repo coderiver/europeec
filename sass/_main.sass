@@ -639,9 +639,13 @@
 	.pagi__prev
 		a
 			+s(prev)
+			+r(820)
+				+s(arrleftbig)
 	.pagi__next
 		a
 			+s(next)
+			+r(820)
+				+s(arrrightbig)
 	.pagi__more
 		a
 			margin-left: 32px
@@ -743,10 +747,17 @@
 		.editors__next
 			+s(next)
 			margin-left: 9px
+			+r(820)
+				+s(arrrightbig)
 		.editors__prev
 			+s(prev)
+			+r(820)
+				+s(arrleftbig)
 .fotos
 	margin-bottom: 24px
+	+r(820)
+		overflow: hidden
+		padding-bottom: 10px 
 	.fotos__item
 		width: 100%
 		a
@@ -770,6 +781,7 @@
 		top: 0px
 		cursor: pointer
 		+r(820)
+			top: -3px 
 			&:before
 				content: ' '
 				position: absolute
@@ -781,9 +793,13 @@
 	.fotos__prev
 		+s(prev)
 		left: -18px
+		+r(820)
+			+s(arrleftbig)
 	.fotos__next
 		+s(next)
 		right: -18px
+		+r(820)
+			+s(arrrightbig)
 	.fotos__pagi
 		display: inline-block
 		background: #fff
@@ -912,6 +928,17 @@ blockquote
 				&:last-child
 					&:before
 						display: none
+		+r(600)
+			td,th,thead,tbody,tr
+				display: inline-block !important
+				border: none !important
+				padding: 0 
+			thead
+				display: block !important
+			tr
+				display: block !important
+				border-bottom: 2px solid #ccc !important
+				padding: 5px 0 
 		tbody
 			td
 				border: 1px dotted #C6C6C6
