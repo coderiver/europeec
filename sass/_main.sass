@@ -730,6 +730,16 @@
 		&>div
 			display: inline-block
 			cursor: pointer
+			+r(820)
+				position: relative
+				&:before
+					content: ' '
+					position: absolute
+					top: -10px 
+					right: -10px 
+					bottom: -10px 
+					left: -10px 
+					cursor: pointer
 		.editors__next
 			+s(next)
 			margin-left: 9px
@@ -759,6 +769,15 @@
 		position: absolute
 		top: 0px
 		cursor: pointer
+		+r(820)
+			&:before
+				content: ' '
+				position: absolute
+				top: -30px 
+				right: -30px 
+				bottom: -30px 
+				left: -30px 
+				cursor: pointer
 	.fotos__prev
 		+s(prev)
 		left: -18px
@@ -863,6 +882,41 @@ blockquote
 			position: absolute
 			bottom: -10px
 			left: 0
+	table
+		width: 100%
+		margin: 1.5em 0 
+		th,td
+			padding: 10px 20px
+			&:first-child
+				padding-left: 0 
+				border-left: none !important 
+			&:last-child
+				border-right: none !important 
+		thead
+			th
+				text-align: left
+				font-weight: bold
+				border-bottom: 2px solid #E6E6E6 
+				border-top: 2px solid #E6E6E6  
+				font-size: 14px 
+				position: relative
+				color: #0A4FB4 
+				&:before
+					position: absolute
+					right: -1px
+					top: 10px  
+					bottom: 10px 
+					content: ' '
+					width: 2px
+					background: #E6E6E6
+				&:last-child
+					&:before
+						display: none
+		tbody
+			td
+				border: 1px dotted #C6C6C6
+				font-size: 13px  
+				color: #333333 
 	p
 		font-size: 14px
 		margin-bottom: 15px
