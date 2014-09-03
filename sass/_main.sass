@@ -978,14 +978,41 @@ blockquote
 		float: right
 		margin-left: 5px
 		text-align: right
+		+r($mob)
+			float: none
+			text-align: left
+			margin-top: 20px 
 		.author
 			position: relative
-			top: -14px
-			+s(author)
-			+r(1150)
-				+s(authorsmall)
+			background: #FFE58A
+			font-family: georgia,serif
+			font-size: 19px
+			color: #181818   
+			height: 50px
+			line-height: 50px
+			padding: 0 90px 0 19px  
 			+r($mob)
-				+s(authormobile)
+				display: inline-block
+				margin-bottom: 20px 
+				
+			&:before
+				position: absolute
+				bottom: -13px 
+				+s(authorarr)
+				left: 13px 
+				content: ' '
+				+r($mob)
+					display: none
+			img
+				position: absolute
+				right: 10px  
+				bottom: 0
+				display: block 
+			// +s(author)
+			// +r(1150)
+			// 	+s(authorsmall)
+			// +r($mob)
+			// 	+s(authormobile)
 		.ad
 			margin-left: 120px
 			position: relative
