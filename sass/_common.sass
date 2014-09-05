@@ -84,3 +84,43 @@ a
 		display: block
 
 // common blocks
+
+.select
+	position: relative
+	cursor: pointer
+.select__text
+	position: relative
+	z-index: 111
+	font-weight: bold
+	color: #000
+	text-transform: uppercase
+	display: inline-block
+.select__list
+	position: absolute
+	top: -14px
+	left: -14px
+	width: 64px
+	box-shadow: 0 0 8px rgba(0,0,1,.44)
+	padding-top: 41px
+	background: #fff
+	display: none
+	z-index: 110
+	li
+		display: block
+		height: 41px
+		line-height: 41px
+		text-decoration: none
+		text-transform: uppercase
+		color: #161616
+		font-weight: bold
+		padding-left: 14px
+		border-top: 1px solid #ECEDEE
+		text-align: left
+		&:hover
+			color: #2A70DF
+			+r($mob)
+				color: #FFF
+				background: #2A70DF
+		&:active
+			background: #2A70DF
+			color: #fff
