@@ -37,7 +37,7 @@
 						<input type="hidden" class="js-select-input" value="0">
 						<ul class="select__list js-select-list">
 							<li data-id="0">USD</li>
-							<li data-id="1">EUR</li>
+							<li data-id="1" class="is-chosen">EUR</li>
 						</ul>
 					</div>
 					<i class="currency__status is-up"></i><div class="currency__value">16.05</div>
@@ -49,7 +49,7 @@
 						<input type="hidden" class="js-select-input" value="0">
 						<ul class="select__list js-select-list">
 							<li data-id="0">EUR</li>
-							<li data-id="1">USD</li>
+							<li data-id="1" class="is-chosen">USD</li>
 						</ul>
 					</div>
 					<i class="currency__status is-down"></i><div class="currency__value">11.56</div>
@@ -450,7 +450,8 @@
 					    data-cycle-slides="> .editors__slide"
 					    data-cycle-prev=".editors__prev"
 					    data-cycle-next=".editors__next"
-
+						data-cycle-autoHeight="container"
+						data-cycle-loader ='wait'
 					>
 
 						<div class="editors__slide js-cycle-slide">
@@ -493,7 +494,9 @@
 					    data-cycle-slides="> .fotos__item"
 					    data-cycle-prev=".fotos__prev"
 					    data-cycle-next=".fotos__next"
-					    data-cycle-pager=".fotos__pagi">
+					    data-cycle-pager=".fotos__pagi"
+					    data-cycle-autoHeight="container"
+						data-cycle-loader ='wait'>
 							<div class="fotos__item js-cycle-slide">
 								<a href="#" class="fotos__title"><img src="img/fotos.jpg" alt="">
 								<span>Фильм-открытие Каннского фестиваля - "Принцесса Монако"</span></a>

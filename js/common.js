@@ -141,6 +141,8 @@ head.ready(function() {
 			$(this).parents(".js-select").find(".js-select-input").val(id);
 			$(this).parent().hide();
 			$(this).parents(".js-select").removeClass("is-active");
+			$(this).siblings().removeClass('is-chosen');
+			$(this).addClass('is-chosen');
 			event.stopPropagation();
 		});
 	}
