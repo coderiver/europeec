@@ -110,8 +110,8 @@
 		width: 50px
 		+transition(all .2s ease)
 		&:focus
-			width: 200px 
-			background: #fafafa 
+			width: 200px
+			background: #fafafa
 		+r(1270)
 			&:focus
 				width: 150px
@@ -151,6 +151,13 @@
 		color: #000
 		cursor: pointer
 		position: relative
+		&:after
+			content: ""
+			display: inline-block
+			+s(arrbot)
+			margin: 0 4px 0 2px
+			position: relative
+			top: -2px
 	.currency__value
 		color: #767676
 		display: inline-block
@@ -294,7 +301,7 @@
 		position: relative
 		&:hover
 			color: #2A70DF
-			
+
 		&.is-active
 			&:before
 				content: ""

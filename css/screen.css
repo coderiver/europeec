@@ -39,13 +39,14 @@ a { color: #0e4aab; }
 
 .select__text { position: relative; z-index: 111; font-weight: bold; color: black; text-transform: uppercase; display: inline-block; }
 
-.select__list { position: absolute; top: -14px; left: -14px; width: 64px; box-shadow: 0 0 8px rgba(0, 0, 1, 0.44); padding-top: 41px; background: white; display: none; z-index: 110; }
-.select__list li { display: block; height: 41px; line-height: 41px; text-decoration: none; text-transform: uppercase; color: #161616; font-weight: bold; padding-left: 14px; border-top: 1px solid #ecedee; text-align: left; }
+.select__list { position: absolute; top: -14px; left: -14px; box-shadow: 0 0 8px rgba(0, 0, 1, 0.44); padding-top: 41px; background: white; display: none; z-index: 110; }
+.select__list li { display: block; height: 41px; line-height: 41px; text-decoration: none; text-transform: uppercase; color: #161616; font-weight: bold; padding: 0 14px; border-top: 1px solid #ecedee; text-align: left; }
 .select__list li.is-chosen { display: none; }
 .select__list li:hover { color: #2a70df; }
 @media only screen and (max-width: 720px) { .select__list li:hover { color: white; background: #2a70df; } }
 .select__list li:active { background: #2a70df; color: white; }
 
+@media print { .topbanner { display: none; } }
 .header { height: 112px; position: relative; border-bottom: 1px solid white; box-shadow: inset 0 -3px 0 #e0e0e0, 0 1px 0 #e0e0e0; }
 @media only screen and (max-width: 850px) { .header { height: auto; text-align: center; padding-top: 16px; padding-bottom: 10px; } }
 .header .header__logo { position: absolute; left: 50%; margin-left: -127px; top: 17px; }
@@ -82,6 +83,7 @@ a { color: #0e4aab; }
 .currency { display: inline-block; vertical-align: middle; }
 .currency .currency__current { display: inline-block; position: relative; z-index: 111; }
 .currency .currency__name { display: inline-block; font-weight: bold; color: black; cursor: pointer; position: relative; }
+.currency .currency__name:after { content: ""; display: inline-block; background: url('../img/icons-sd0cc6fb5d8.png') 0 -1058px no-repeat; width: 7px; height: 5px; margin: 0 4px 0 2px; position: relative; top: -2px; }
 .currency .currency__value { color: #767676; display: inline-block; }
 .currency .currency__status { margin-right: 3px; display: inline-block; }
 .currency .currency__status.is-up { background: url('../img/icons-sd0cc6fb5d8.png') 0 -1162px no-repeat; width: 5px; height: 9px; }
@@ -792,7 +794,7 @@ a:hover .gallery .gallery__section-title span { color: #9b9b9b; }
 .error-page div { padding: 15px 0 0 110px; font-size: 12px; }
 .error-page div span { font-size: 18px; }
 
-@media print { .header, .footer, .nav, .topbanner, .fbanner, .l-col3, .article__slideshow, .nav__sub, .social-buttons, .social-btns, .smbanner, .l-col1, .toparea, .head, .read-more, .comments { display: none; }
+@media print { .header, .footer, .nav, .topbanner, .fbanner, .banner, .l-col3, .article__slideshow, .nav__sub, .social-buttons, .social-btns, .smbanner, .l-col1, .toparea, .head, .read-more, .comments { display: none; }
   body { margin: 0.2in 0.55in; padding: 0; }
   body .l .l-col2 { float: none; width: 100%; padding: 0; margin: 0; }
   body .l .l-col2 .l-col2inner { margin: 0 !important; padding: 0 !important; float: none !important; width: auto !important; }

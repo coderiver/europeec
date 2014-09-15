@@ -99,7 +99,7 @@ a
 	position: absolute
 	top: -14px
 	left: -14px
-	width: 64px
+	// width: 64px
 	box-shadow: 0 0 8px rgba(0,0,1,.44)
 	padding-top: 41px
 	background: #fff
@@ -113,7 +113,7 @@ a
 		text-transform: uppercase
 		color: #161616
 		font-weight: bold
-		padding-left: 14px
+		padding: 0 14px
 		border-top: 1px solid #ECEDEE
 		text-align: left
 		&.is-chosen
@@ -126,3 +126,7 @@ a
 		&:active
 			background: #2A70DF
 			color: #fff
+
+@media print
+	.topbanner
+		display: none
