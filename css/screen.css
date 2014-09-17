@@ -46,7 +46,6 @@ a { color: #0e4aab; }
 @media only screen and (max-width: 720px) { .select__list li:hover { color: white; background: #2a70df; } }
 .select__list li:active { background: #2a70df; color: white; }
 
-@media print { .topbanner { display: none; } }
 .header { height: 112px; position: relative; border-bottom: 1px solid white; box-shadow: inset 0 -3px 0 #e0e0e0, 0 1px 0 #e0e0e0; }
 @media only screen and (max-width: 850px) { .header { height: auto; text-align: center; padding-top: 16px; padding-bottom: 10px; } }
 .header .header__logo { position: absolute; left: 50%; margin-left: -127px; top: 17px; }
@@ -535,11 +534,13 @@ body { padding: 0 20px; }
 .quote { margin: 19px 0 39px; }
 .quote a { text-decoration: none; color: #4d4d4d; }
 
-blockquote { display: block; padding: 15px 30px; margin-bottom: 25px; position: relative; font-style: italic; color: #4d4d4d; line-height: 1.42; }
+blockquote { display: block; padding: 15px 30px; position: relative; font-style: italic; color: #4d4d4d; line-height: 1.42; }
 blockquote:before { content: ""; display: block; background: url('../img/icons-sd0cc6fb5d8.png') 0 -427px no-repeat; width: 25px; height: 20px; position: absolute; top: 0; left: 0; }
+blockquote:after { content: ""; display: block; background: url('../img/icons-sd0cc6fb5d8.png') 0 -397px no-repeat; width: 26px; height: 20px; position: absolute; bottom: 0px; right: 0px; }
 .article blockquote { font-size: 14px; color: #7c7c7c; line-height: 1.714; margin: 20px 0 25px; }
-blockquote cite { color: #111111; display: block; margin-top: 13px; left: 0px; font-weight: bold; padding-right: 20px; position: relative; }
-blockquote cite:after { content: ""; display: block; background: url('../img/icons-sd0cc6fb5d8.png') 0 -397px no-repeat; width: 26px; height: 20px; position: absolute; top: -30px; right: -20px; }
+
+cite { color: #111111; font-weight: bold; position: relative; }
+.quote cite { display: block; padding: 0 30px; margin-bottom: 25px; }
 
 .article { margin-bottom: 30px; color: #565656; line-height: 1.5; font-size: 14px; }
 .article h1 { font-family: "Cambria", sans-serif; font-weight: bold; font-size: 28px; color: #181818; line-height: 1.1; margin-bottom: 25px; }
