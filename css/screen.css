@@ -635,10 +635,10 @@ cite { color: #111111; font-weight: bold; position: relative; }
 @media only screen and (max-width: 720px) { .article__slideshow .article__img-author { padding-bottom: 35px; } }
 
 .article__slide { float: none; width: 100%; max-width: 100%; margin: 0; }
-.article__slide .article__img-title, .article__slide .article__img-author { padding-right: 50px; }
-@media only screen and (max-width: 720px) { .article__slide .article__img-title, .article__slide .article__img-author { padding-right: 0; } }
+.article__slide .article__img-title, .article__slide .article__img-author, .article__slide .article__img-source { display: block; padding-right: 60px; }
+@media only screen and (max-width: 720px) { .article__slide .article__img-title, .article__slide .article__img-author, .article__slide .article__img-source { padding-right: 0; } }
 
-.article__slidecount { position: absolute; font-size: 18px; color: #181818; bottom: 0; right: 0; background: white; }
+.article__slidecount { position: absolute; z-index: 100; font-size: 18px; color: #181818; bottom: 0; right: 0; background: white; }
 @media only screen and (max-width: 720px) { .article__slidecount { left: 50%; bottom: -2px; margin-left: -17px; } }
 
 .article__prev, .article__next { display: block; width: 46px; height: 26px; background: white; text-align: center; position: absolute; top: 0; height: 100%; z-index: 100; }

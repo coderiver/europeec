@@ -1222,12 +1222,14 @@ cite
 	width: 100%
 	max-width: 100%
 	margin: 0
-	.article__img-title, .article__img-author
-		padding-right: 50px
+	.article__img-title, .article__img-author, .article__img-source
+		display: block
+		padding-right: 60px
 		+r($mob)
 			padding-right: 0
 .article__slidecount
 	position: absolute
+	z-index: 100
 	font-size: 18px
 	color: #181818
 	bottom: 0
